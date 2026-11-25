@@ -44,13 +44,14 @@ flowchart TD
 
 Add this after the overall workflow:
 
-```mermaid
+
 ### Reference database generation
 
 The Nextflow workflow processes the downloaded BV-BRC reference sequences
 through the following steps:
 
 ```mermaid
+%%{init: {"flowchart": {"wrappingWidth": 280, "nodeSpacing": 50, "rankSpacing": 60}}}%%
 flowchart TD
     A["BV-BRC metadata and sequence JSON"] --> B["BVBRC_GETFASTA"]
     B --> C["FASTA sequences"]
