@@ -24,15 +24,15 @@ environment setup, reference data downloading, and Nextflow execution.
 
 ```mermaid
 flowchart TD
-    A["bin/run_pipeline.sh"] --> B["Initialize Python virtual environment"]
+    A["bin/run_pipeline.sh"] --> B["Initialize Python<br> virtual environment"]
     B --> C{"SKIP_DOWNLOAD=1?"}
-    C -->|No| D["Download influenza A and B data from BV-BRC"]
-    C -->|Yes| F["Use existing downloaded data"]
-    D --> E["Save metadata and sequence JSON files"]
-    E --> G["Run Nextflow workflow"]
+    C -->|No| D["Download influenza <br>A and B data from BV-BRC"]
+    C -->|Yes| F["Use existing <br>downloaded data"]
+    D --> E["Save metadata and <br>sequence JSON files"]
+    E --> G["Run Nextflow <br>workflow"]
     F --> G
-    G --> H["Generate reference databases"]
-    H --> I["Publish results and pipeline information"]
+    G --> H["Generate reference<br> databases"]
+    H --> I["Publish results and <br>pipeline information"]
 ```
 
 
