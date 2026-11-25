@@ -1,78 +1,267 @@
-# provlab-bioinfo/fluab_reference_db
+# fluab-reference-db
 
-## Introduction
+Automated reference database generation for the ProvLab influenza A and B bioinformatics pipeline, [nf-fluab](https://github.com/xiaoli-dong/nf-fluab).
 
-**provlab-bioinfo/fluab_reference_db** is a bioinformatics pipeline that ...
+`fluab-reference-db` downloads influenza reference sequence metadata and sequences from [BV-BRC](https://www.bv-brc.org/), processes the downloaded data through a Nextflow workflow, and generates reference databases for downstream influenza sequence analysis.
 
-<!-- TODO nf-core:
-   Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
-   major pipeline sections and the types of output it produces. You're giving an overview to someone new
-   to nf-core here, in 15-20 seconds. For an example, see https://github.com/nf-core/rnaseq/blob/master/README.md#introduction
--->
+The workflow is designed to run through a single entry-point script, which handles Python environment setup, data downloading, and Nextflow execution.
 
-<!-- TODO nf-core: Include a figure that guides the user through the major workflow steps. Many nf-core
-     workflows use the "tube map" design for that. See https://nf-co.re/docs/community/brand/workflow-schematics#examples for examples.   -->
-<!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline -->
+## Features
+
+- Automatically downloads influenza A and B reference data from BV-BRC.
+- Retrieves sequence metadata and nucleotide sequences in batches.
+- Supports configurable batch sizes and download limits.
+- Processes downloaded data using a Nextflow workflow.
+- Validates and processes influenza reference sequences using VADR.
+- Generates versioned reference databases for `nf-fluab`.
+- Supports resuming interrupted Nextflow runs.
+- Produces Nextflow execution reports and workflow information.
+
+## Workflow overview
+
+The pipeline is launched through `bin/run_pipeline.sh`, which handles
+environment setup, reference data downloading, and Nextflow execution.
+
+```mermaid
+flowchart TD
+    A["bin/run_pipeline.sh"] --> B["Initialize Python virtual environment"]
+    B --> C{"SKIP_DOWNLOAD=1?"}
+    C -->|No| D["Download influenza A and B data from BV-BRC"]
+    C -->|Yes| F["Use existing downloaded data"]
+    D --> E["Save metadata and sequence JSON files"]
+    E --> G["Run Nextflow workflow"]
+    F --> G
+    G --> H["Generate reference databases"]
+    H --> I["Publish results and pipeline information"]
+```
+
+
+### 2. Reference database processing workflow
+
+Add this after the overall workflow:
+
+```markdown
+### Reference database generation
+
+The Nextflow workflow processes the downloaded BV-BRC reference sequences
+through the following steps:
+
+```mermaid
+flowchart TD
+    A["BV-BRC metadata and sequence JSON"] --> B["BVBRC_GETFASTA"]
+    B --> C["FASTA sequences"]
+    C --> D["CD-HIT-EST"]
+    D --> E["Cluster sequences at 99% identity"]
+    E --> F["PICKREPS"]
+    C --> F
+    F --> G["Select representative sequences"]
+    G --> H["VADR_TRIM"]
+    H --> I["Trim terminal ambiguities"]
+    I --> J["VADR_ANNOTATE"]
+    J --> K{"VADR results"}
+    K -->|Pass| L["VADR_EXTRACTCDS"]
+    K -->|Failed| M["Excluded from CDS extraction"]
+    L --> N["Extract CDS sequences"]
+    N --> O["DBSTATS"]
+    O --> P["Generate database statistics"]
+    N --> Q["MASH_SKETCH"]
+    Q --> R["Generate Mash sketches"]
+    P --> S["Reference database outputs"]
+    R --> S
+```
+
+These diagrams reflect the actual workflow in `workflows/fluab_reference_db.nf`: CD-HIT-EST clustering at 99%, representative selection, VADR trimming and annotation, CDS extraction, database statistics, and Mash sketch generation. <Cite refs={["turn702449view0","turn184327view0"]}/>
+
+**My recommendation:** Keep both diagrams. The first helps users understand how to launch and run the project; the second explains the actual bioinformatics processing steps. This makes the README useful to both pipeline users and developers.
+## Requirements
+
+The following software and environment are required:
+
+- Linux
+- Python 3
+- Conda
+- Nextflow (version 25.10.4 or later)
+- Singularity or Apptainer
+- A Conda environment named `nf-core-4`, with nf-core tools installed
+
+The entry-point script automatically creates a local Python virtual environment (`.venv`) and installs the Python dependencies from `requirements.txt` when needed.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/xiaoli-dong/fluab-reference-db.git
+
+cd fluab-reference-db
+```
 
 ## Usage
 
-> [!NOTE]
-> If you are new to Nextflow and nf-core, please refer to [this page](https://nf-co.re/docs/get_started/environment_setup/overview) on how to set-up Nextflow. Make sure to [test your setup](https://nf-co.re/docs/get_started/run-your-first-pipeline) with `-profile test` before running the workflow on actual data.
+### Run the pipeline
 
-<!-- TODO nf-core: Describe the minimum required steps to execute the pipeline, e.g. how to prepare samplesheets.
-     Explain what rows and columns represent. For instance (please edit as appropriate):
-
-First, prepare a samplesheet with your input data that looks as follows:
-
-`samplesheet.csv`:
-
-```csv
-sample,fastq_1,fastq_2
-CONTROL_REP1,AEG588A1_S1_L002_R1_001.fastq.gz,AEG588A1_S1_L002_R2_001.fastq.gz
-```
-
-Each row represents a fastq file (single-end) or a pair of fastq files (paired end).
-
--->
-
-Now, you can run the pipeline using:
-
-<!-- TODO nf-core: update the following command to include all required parameters for a minimal example -->
+The main entry point is:
 
 ```bash
-nextflow run provlab-bioinfo/fluab_reference_db \
-   -profile <docker/singularity/.../institute> \
-   --input samplesheet.csv \
-   --outdir <OUTDIR>
+bash bin/run_pipeline.sh
 ```
 
-> [!WARNING]
-> Please provide pipeline parameters via the CLI or Nextflow `-params-file` option. Custom config files including those provided by the `-c` Nextflow option can be used to provide any configuration _**except for parameters**_; see [docs](https://nf-co.re/docs/running/run-pipelines#using-parameter-files).
+By default, the script:
 
-## Credits
+1. Creates the output directory in the current working directory.
+2. Creates a Python virtual environment (`.venv`) if one does not already exist.
+3. Installs the required Python dependencies.
+4. Downloads influenza A and B metadata and sequences from BV-BRC.
+5. Saves the downloaded JSON files under `data/`.
+6. Activates the `nf-core-4` Conda environment.
+7. Runs the Nextflow workflow using the Singularity profile.
+8. Generates the reference database using the current date as the database version.
 
-provlab-bioinfo/fluab_reference_db was originally written by Xiaoli-dong.
+### Specify an output directory
 
-We thank the following people for their extensive assistance in the development of this pipeline:
+```bash
+bash bin/run_pipeline.sh --outdir results
+```
 
-<!-- TODO nf-core: If applicable, make list of people who have also contributed -->
+### Configure download parameters
 
-## Contributions and Support
+```bash
+bash bin/run_pipeline.sh \
+    --outdir results \
+    --batch 200 \
+    --seq-limit 200
+```
 
-If you would like to contribute to this pipeline, please see the [contributing guidelines](docs/CONTRIBUTING.md).
+| Parameter | Default | Description |
+|---|---:|---|
+| `--outdir` | Current directory | Output directory |
+| `--batch` | 200 | Metadata page size and sequence batch size |
+| `--seq-limit` | 200 | Maximum number of sequences per server request |
+| `--max` | Unlimited | Maximum number of records per taxon |
 
-## Citations
+For example, to limit downloads to 500 records per taxon:
 
-<!-- TODO nf-core: Add citation for pipeline after first release. Uncomment lines below and update Zenodo doi and badge at the top of this file. -->
-<!-- If you use provlab-bioinfo/fluab_reference_db for your analysis, please cite it using the following doi: [10.5281/zenodo.XXXXXX](https://doi.org/10.5281/zenodo.XXXXXX) -->
+```bash
+bash bin/run_pipeline.sh --outdir results --max 500
+```
 
+### Override the database version
 
+By default, the database version is generated using the current date (`YYYYMMDD`).
 
-This pipeline uses code and infrastructure developed and maintained by the [nf-core](https://nf-co.re) community, reused here under the [MIT license](https://github.com/nf-core/tools/blob/main/LICENSE).
+To specify a custom version:
 
-> **The nf-core framework for community-curated bioinformatics pipelines.**
->
-> Philip Ewels, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso & Sven Nahnsen.
->
-> _Nat Biotechnol._ 2020 Feb 13. doi: [10.1038/s41587-020-0439-x](https://dx.doi.org/10.1038/s41587-020-0439-x).
-# fluab_reference_db
+```bash
+DB_VERSION=20261125 bash bin/run_pipeline.sh --outdir results
+```
+
+### Resume a previous run
+
+Nextflow supports resuming previously completed processes using `-resume`.
+
+```bash
+bash bin/run_pipeline.sh --outdir results -resume
+```
+
+### Skip downloading reference data
+
+If the reference data have already been downloaded and are available in the output directory, the download step can be skipped.
+
+```bash
+SKIP_DOWNLOAD=1 bash bin/run_pipeline.sh --outdir results -resume
+```
+
+The expected input files are:
+
+```text
+results/
+└── data/
+    ├── meta_raw.json
+    └── sequences_raw.json
+```
+
+### Use a different Nextflow profile
+
+Additional Nextflow arguments are forwarded directly to `nextflow run`.
+
+For example:
+
+```bash
+bash bin/run_pipeline.sh \
+    --outdir results \
+    -profile singularity,slurm
+```
+
+Other supported Nextflow options include:
+
+- `-resume`: Resume a previous execution.
+- `-c`: Specify a custom Nextflow configuration file.
+- `-w`: Specify a custom Nextflow work directory.
+- `-profile`: Select execution profiles.
+
+### Display help
+
+```bash
+bash bin/run_pipeline.sh --help
+```
+
+## Output directory
+
+The output directory contains the downloaded reference data, processed database files, and Nextflow execution information.
+
+The general directory structure is:
+
+```text
+results/
+├── data/
+│   ├── meta_raw.json
+│   └── sequences_raw.json
+├── pipeline_info/
+│   ├── execution_report_*.html
+│   ├── execution_timeline_*.html
+│   ├── execution_trace_*.txt
+│   └── pipeline_dag_*.html
+└── ...
+```
+
+The processed reference database outputs are generated by the Nextflow workflow.
+
+## Repository structure
+
+```text
+fluab-reference-db/
+├── bin/
+│   ├── run_pipeline.sh
+│   └── bvbrc_downloader.py
+├── conf/
+├── docs/
+├── subworkflows/
+├── workflows/
+├── tests/
+├── main.nf
+├── nextflow.config
+├── nextflow_schema.json
+├── requirements.txt
+└── README.md
+```
+
+## Related project
+
+This repository generates reference databases for:
+
+- [nf-fluab](https://github.com/xiaoli-dong/nf-fluab) – ProvLab influenza A and B sequence analysis pipeline.
+
+## Author
+
+Xiaoli Dong  
+ProvLab – Public Health Laboratory Bioinformatics
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+## Acknowledgements
+
+This pipeline uses the [nf-core](https://nf-co.re/) framework and community-maintained Nextflow modules.
+
+Reference data are retrieved from [BV-BRC](https://www.bv-brc.org/).
