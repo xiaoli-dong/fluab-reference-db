@@ -39,12 +39,6 @@ flowchart TD
     H --> I["Publish results and pipeline information"]
 ```
 
-
-### 2. Reference database processing workflow
-
-Add this after the overall workflow:
-
-
 ### Reference database generation
 
 The Nextflow workflow processes the downloaded BV-BRC reference sequences
