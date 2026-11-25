@@ -44,7 +44,7 @@ flowchart TD
 
 Add this after the overall workflow:
 
-```markdown
+```mermaid
 ### Reference database generation
 
 The Nextflow workflow processes the downloaded BV-BRC reference sequences
