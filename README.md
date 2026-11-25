@@ -23,7 +23,7 @@ The pipeline is launched through `bin/run_pipeline.sh`, which handles
 environment setup, reference data downloading, and Nextflow execution.
 
 ```mermaid
-flowchart TD
+flowchart LR
     A["bin/run_pipeline.sh"] --> B["Initialize Python<br> virtual environment"]
     B --> C{"SKIP_DOWNLOAD=1?"}
     C -->|No| D["Download influenza <br>A and B data from BV-BRC"]
