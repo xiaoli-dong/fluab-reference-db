@@ -46,6 +46,7 @@ flowchart TB
 The Nextflow workflow processes the downloaded BV-BRC reference data through the following steps:
 
 ```mermaid
+%%{init: {"flowchart": {"wrappingWidth": 350}}}%%
 flowchart TB
     A["BV-BRC metadata and sequence JSON"] --> B["BVBRC_GETFASTA"]
     B --> C["FASTA sequences"]
