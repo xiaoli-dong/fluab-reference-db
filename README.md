@@ -284,9 +284,3 @@ ProvLab – Public Health Laboratory Bioinformatics
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Acknowledgements
-
-This pipeline uses the [nf-core](https://nf-co.re/) framework and community-maintained Nextflow modules.
-
-Reference data are retrieved from [BV-BRC](https://www.bv-brc.org).
