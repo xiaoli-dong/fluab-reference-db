@@ -75,9 +75,6 @@ flowchart TD
     R --> S
 ```
 
-These diagrams reflect the actual workflow in `workflows/fluab_reference_db.nf`: CD-HIT-EST clustering at 99%, representative selection, VADR trimming and annotation, CDS extraction, database statistics, and Mash sketch generation. <Cite refs={["turn702449view0","turn184327view0"]}/>
-
-**My recommendation:** Keep both diagrams. The first helps users understand how to launch and run the project; the second explains the actual bioinformatics processing steps. This makes the README useful to both pipeline users and developers.
 ## Requirements
 
 The following software and environment are required:
