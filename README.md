@@ -276,11 +276,6 @@ This repository generates reference databases for:
 
 - [nf-fluab](https://github.com/xiaoli-dong/nf-fluab) – ProvLab influenza A and B sequence analysis pipeline.
 
-## Author
-
-Xiaoli Dong  
-ProvLab – Public Health Laboratory Bioinformatics
-
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
