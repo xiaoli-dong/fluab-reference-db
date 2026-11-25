@@ -25,6 +25,7 @@ The workflow is launched using a single entry-point script, `bin/run_pipeline.sh
 The pipeline is launched through `bin/run_pipeline.sh`, which handles environment setup, reference data downloading, and Nextflow execution.
 
 ```mermaid
+%%{init: {"flowchart": {"wrappingWidth": 350}}}%%
 flowchart TB
     A["bin/run_pipeline.sh"] --> B["Initialize Python virtual environment"]
     B --> C{"Skip BV-BRC download?"}
