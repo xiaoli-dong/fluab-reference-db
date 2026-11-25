@@ -269,25 +269,6 @@ results/
 
 The processed reference database files are generated and published by the Nextflow workflow. Their exact names and locations are determined by the workflow configuration.
 
-## Repository structure
-
-```text
-fluab-reference-db/
-├── bin/
-│   ├── run_pipeline.sh
-│   └── bvbrc_downloader.py
-├── conf/
-├── docs/
-├── modules/
-├── subworkflows/
-├── workflows/
-├── tests/
-├── main.nf
-├── nextflow.config
-├── nextflow_schema.json
-├── requirements.txt
-└── README.md
-```
 
 ## Related project
 
