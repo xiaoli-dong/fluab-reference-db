@@ -1,0 +1,314 @@
+2026-09-09 13:55:08,160 [INFO] Starting representative sequence selection
+2026-09-09 13:55:08,160 [INFO] FASTA: sequences_influenza_ab_test_qc.fasta
+2026-09-09 13:55:08,160 [INFO] CLSTR: sequences_influenza_ab_test.cd-hit-est_0.99.fa.clstr
+2026-09-09 13:55:08,160 [INFO] Selection rules: singleton clusters excluded; dominant subtype must be >=70%; longest sequence from dominant subtype selected.
+2026-09-09 13:55:08,165 [INFO] Loaded subtype information for 736 sequences
+2026-09-09 13:55:08,170 [INFO] Loaded complete FASTA headers for 736 sequences
+2026-09-09 13:55:08,170 [INFO] Loaded 140 CD-HIT clusters
+2026-09-09 13:55:08,171 [INFO] SELECTED >Cluster 0: dominant_subtype=Victoria, proportion=1.00, count=58/58, sequence=PV723630|11520.116924, length=1066
+2026-09-09 13:55:08,171 [INFO] SELECTED >Cluster 1: dominant_subtype=Victoria, proportion=1.00, count=45/45, sequence=PV556121|11520.109640, length=1529
+2026-09-09 13:55:08,171 [INFO] SELECTED >Cluster 2: dominant_subtype=Victoria, proportion=1.00, count=45/45, sequence=PV895157|11520.122446, length=1815
+2026-09-09 13:55:08,171 [INFO] SELECTED >Cluster 3: dominant_subtype=Victoria, proportion=1.00, count=45/45, sequence=PV723634|11520.116922, length=1847
+2026-09-09 13:55:08,171 [INFO] SELECTED >Cluster 4: dominant_subtype=Victoria, proportion=1.00, count=42/42, sequence=PV895175|11520.122428, length=1154
+2026-09-09 13:55:08,171 [INFO] SELECTED >Cluster 5: dominant_subtype=H3N2, proportion=1.00, count=24/24, sequence=PZ600275|11320.1516435, length=2326
+2026-09-09 13:55:08,171 [INFO] SELECTED >Cluster 6: dominant_subtype=H3N2, proportion=1.00, count=23/23, sequence=PZ600298|11320.1516412, length=875
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 7: dominant_subtype=H3N2, proportion=1.00, count=23/23, sequence=PZ600277|11320.1516433, length=2223
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 8: dominant_subtype=H3N2, proportion=1.00, count=21/21, sequence=PZ600286|11320.1516422, length=1754
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 9: dominant_subtype=H3N2, proportion=1.00, count=19/19, sequence=PZ600284|11320.1516426, length=2332
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 10: dominant_subtype=H3N2, proportion=1.00, count=17/17, sequence=PZ600295|11320.1516414, length=1556
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 11: dominant_subtype=H3N2, proportion=1.00, count=16/16, sequence=PV819386|11320.1516880, length=1435
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 12: dominant_subtype=H3N2, proportion=1.00, count=15/15, sequence=PZ600288|11320.1516423, length=1458
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 13: dominant_subtype=H3N2, proportion=1.00, count=15/15, sequence=PZ600297|11320.1516413, length=1016
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 14: dominant_subtype=Victoria, proportion=1.00, count=15/15, sequence=PV723629|11520.116926, length=1154
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 15: dominant_subtype=H3N2, proportion=1.00, count=15/15, sequence=PV819535|11320.1516849, length=1520
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 16: dominant_subtype=H3N2, proportion=1.00, count=14/14, sequence=PV819176|11320.1516915, length=2274
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 17: dominant_subtype=Victoria, proportion=1.00, count=11/11, sequence=PV723627|11520.116928, length=1815
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 18: dominant_subtype=H3N2, proportion=1.00, count=10/10, sequence=PV821466|11320.1516790, length=993
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 19: dominant_subtype=Victoria, proportion=1.00, count=10/10, sequence=PV723626|11520.116930, length=1847
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 20: dominant_subtype=H3N2, proportion=1.00, count=9/9, sequence=PV819221|11320.1516887, length=982
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 21: dominant_subtype=H3N2, proportion=1.00, count=9/9, sequence=PV819531|11320.1516853, length=2294
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 22: dominant_subtype=H3N2, proportion=1.00, count=9/9, sequence=PV819383|11320.1516882, length=2209
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 23: dominant_subtype=H3N2, proportion=1.00, count=9/9, sequence=PV819388|11320.1516879, length=859
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 24: dominant_subtype=H3N2, proportion=1.00, count=8/8, sequence=PV821440|11320.1516801, length=1718
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 25: dominant_subtype=H3N2, proportion=1.00, count=8/8, sequence=MN573152|11320.244601, length=993
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 26: dominant_subtype=Victoria, proportion=1.00, count=8/8, sequence=PV723625|11520.116929, length=2275
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 27: dominant_subtype=Victoria, proportion=1.00, count=6/6, sequence=PV895150|11520.122454, length=1529
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 28: dominant_subtype=H1N1, proportion=1.00, count=5/5, sequence=MK365799|11320.244613, length=1777
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 29: dominant_subtype=H3N2, proportion=1.00, count=5/5, sequence=MN573163|11320.244616, length=865
+2026-09-09 13:55:08,172 [INFO] SELECTED >Cluster 30: dominant_subtype=H1N1, proportion=1.00, count=5/5, sequence=MK365797|11320.244608, length=2341
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 31: dominant_subtype=H3N2, proportion=1.00, count=5/5, sequence=MN573159|11320.244612, length=1737
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 32: dominant_subtype=H3N2, proportion=1.00, count=4/4, sequence=PV819384|11320.1516883, length=1701
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 33: dominant_subtype=H1N1, proportion=1.00, count=4/4, sequence=MK365809|11320.244644, length=1459
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 34: dominant_subtype=H1N1, proportion=1.00, count=4/4, sequence=MK365802|11320.244614, length=1027
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 35: dominant_subtype=H3N2, proportion=1.00, count=4/4, sequence=MN573164|11320.244615, length=2192
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 36: dominant_subtype=H3N2, proportion=1.00, count=4/4, sequence=MN573193|11320.244665, length=1441
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 37: dominant_subtype=H1N1, proportion=1.00, count=4/4, sequence=MK365804|11320.244617, length=2341
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 38: dominant_subtype=H1N1, proportion=1.00, count=4/4, sequence=MK365803|11320.244610, length=890
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 39: dominant_subtype=H3N2, proportion=1.00, count=4/4, sequence=MN573174|11320.244645, length=2316
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 40: dominant_subtype=H1N1, proportion=1.00, count=4/4, sequence=MK365798|11320.244609, length=2233
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 41: dominant_subtype=H3N2, proportion=1.00, count=4/4, sequence=MN573170|11320.244629, length=1538
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 42: dominant_subtype=H1N1, proportion=1.00, count=3/3, sequence=PZ579130|11320.1515159, length=2280
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 43: dominant_subtype=H1N1, proportion=1.00, count=3/3, sequence=MK365800|11320.244618, length=1566
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 44: dominant_subtype=H3N2, proportion=1.00, count=3/3, sequence=MN573173|11320.244623, length=2309
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 45: dominant_subtype=H3N2, proportion=1.00, count=3/3, sequence=PV819523|11320.1516861, length=2294
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 46: dominant_subtype=H1N1, proportion=1.00, count=3/3, sequence=PZ579127|11320.1515162, length=838
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 47: dominant_subtype=H1N1, proportion=1.00, count=3/3, sequence=PZ579124|11320.1515175, length=982
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 48: dominant_subtype=Victoria, proportion=1.00, count=3/3, sequence=PV895156|11520.122447, length=1847
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 49: dominant_subtype=H1N1, proportion=1.00, count=3/3, sequence=PZ579126|11320.1515161, length=1497
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 50: dominant_subtype=H3N2, proportion=1.00, count=2/2, sequence=PV819171|11320.1516921, length=1516
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 51: dominant_subtype=H3N2, proportion=1.00, count=2/2, sequence=PV819162|11320.1516930, length=1636
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 52: dominant_subtype=H3N2, proportion=1.00, count=2/2, sequence=MN573151|11320.244603, length=1737
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 53: dominant_subtype=H1N1, proportion=1.00, count=2/2, sequence=PZ579125|11320.1515164, length=1410
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 54: dominant_subtype=H1N1, proportion=1.00, count=2/2, sequence=PZ579072|11320.1515216, length=1701
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 55: dominant_subtype=H3N2, proportion=1.00, count=2/2, sequence=PV819528|11320.1516856, length=1410
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 56: dominant_subtype=H9N2, proportion=1.00, count=2/2, sequence=PV717827|11320.1516956, length=1027
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 57: dominant_subtype=H1N1, proportion=1.00, count=2/2, sequence=PZ579113|11320.1515176, length=2274
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 58: dominant_subtype=H3N2, proportion=1.00, count=2/2, sequence=PV819170|11320.1516922, length=1690
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 59: dominant_subtype=Victoria, proportion=1.00, count=2/2, sequence=PV895158|11520.122445, length=1528
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 60: dominant_subtype=H3N2, proportion=1.00, count=2/2, sequence=MN573158|11320.244607, length=2316
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 61: dominant_subtype=H3N2, proportion=1.00, count=2/2, sequence=PV819181|11320.1516911, length=998
+2026-09-09 13:55:08,173 [INFO] SELECTED >Cluster 62: dominant_subtype=H3N2, proportion=1.00, count=2/2, sequence=MN573149|11320.244599, length=2309
+2026-09-09 13:55:08,173 [INFO] EXCLUDED >Cluster 63: reason=singleton
+2026-09-09 13:55:08,173 [INFO]   FASTA header: >PV821521|11320.1516776 Human|5|NP|H3N2|Malaysia|A/Malaysia/2311121/2023|1497
+2026-09-09 13:55:08,173 [INFO]   subtype=H3N2, length=1497
+2026-09-09 13:55:08,173 [INFO] EXCLUDED >Cluster 64: reason=singleton
+2026-09-09 13:55:08,173 [INFO]   FASTA header: >PZ610286|11320.1516664 Gull|6|NA|H5N1|Germany|A/gull/Germany-SN/VD202605383/2026|1433
+2026-09-09 13:55:08,173 [INFO]   subtype=H5N1, length=1433
+2026-09-09 13:55:08,173 [INFO] EXCLUDED >Cluster 65: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV819187|11320.1516905 Human|5|NP|H3N2|Malaysia|A/Malaysia/2304042/2023|1491
+2026-09-09 13:55:08,174 [INFO]   subtype=H3N2, length=1491
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 66: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >MK365833|11320.244684 Pig|6|NA|H1N1|Germany|A/swine/Frontenhausen/9388/2009|1458
+2026-09-09 13:55:08,174 [INFO]   subtype=H1N1, length=1458
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 67: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ610240|11320.1515570 Duck|5|NP|H5N2|Singapore|A/duck/Singapore/A-FWL-2004-07-00189/2004|1497
+2026-09-09 13:55:08,174 [INFO]   subtype=H5N2, length=1497
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 68: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV821348|11320.1516817 Human|5|NP|H3N2|Malaysia|A/Malaysia/2405230/2024|1493
+2026-09-09 13:55:08,174 [INFO]   subtype=H3N2, length=1493
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 69: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ581256|11320.1514524 Red_Junglefowl|6|NA|H9N2|Mozambique|A/chicken/Mozambique/305/2026|1426
+2026-09-09 13:55:08,174 [INFO]   subtype=H9N2, length=1426
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 70: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV717822|11320.1516961 Red_Junglefowl|8|NS|H9N2|South_Korea|A/chicken/South_Korea/ZL63/2024|890
+2026-09-09 13:55:08,174 [INFO]   subtype=H9N2, length=890
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 71: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV821524|11320.1516774 Human|8|NS|H3N2|Malaysia|A/Malaysia/2311121/2023|880
+2026-09-09 13:55:08,174 [INFO]   subtype=H3N2, length=880
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 72: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV717830|11320.1516953 Environment|8|NS|H9N2|South_Korea|A/environment/South_Korea/ZL12/2023|890
+2026-09-09 13:55:08,174 [INFO]   subtype=H9N2, length=890
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 73: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ581257|11320.1514522 Red_Junglefowl|7|MP|H9N2|Mozambique|A/chicken/Mozambique/305/2026|983
+2026-09-09 13:55:08,174 [INFO]   subtype=H9N2, length=983
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 74: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ610238|11320.1515572 Duck|7|MP|H5N2|Singapore|A/duck/Singapore/A-FWL-2004-07-00189/2004|982
+2026-09-09 13:55:08,174 [INFO]   subtype=H5N2, length=982
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 75: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV819190|11320.1516902 Human|8|NS|H3N2|Malaysia|A/Malaysia/2304042/2023|838
+2026-09-09 13:55:08,174 [INFO]   subtype=H3N2, length=838
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 76: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ610241|11320.1515569 Duck|8|NS|H5N2|Singapore|A/duck/Singapore/A-FWL-2004-07-00189/2004|838
+2026-09-09 13:55:08,174 [INFO]   subtype=H5N2, length=838
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 77: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ581258|11320.1514521 Red_Junglefowl|8|NS|H9N2|Mozambique|A/chicken/Mozambique/305/2026|844
+2026-09-09 13:55:08,174 [INFO]   subtype=H9N2, length=844
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 78: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ610288|11320.1516663 Gull|8|NS|H5N1|Germany|A/gull/Germany-SN/VD202605383/2026|865
+2026-09-09 13:55:08,174 [INFO]   subtype=H5N1, length=865
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 79: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV819166|11320.1516926 Human|8|NS|H3N2|Malaysia|A/Malaysia/2304047/2023|853
+2026-09-09 13:55:08,174 [INFO]   subtype=H3N2, length=853
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 80: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ610239|11320.1515571 Duck|6|NA|H5N2|Singapore|A/duck/Singapore/A-FWL-2004-07-00189/2004|1410
+2026-09-09 13:55:08,174 [INFO]   subtype=H5N2, length=1410
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 81: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV717828|11320.1516955 Environment|6|NA|H9N2|South_Korea|A/environment/South_Korea/ZL12/2023|1401
+2026-09-09 13:55:08,174 [INFO]   subtype=H9N2, length=1401
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 82: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV819220|11320.1516888 Human|6|NA|H3N2|Malaysia|A/Malaysia/2311108/2023|1410
+2026-09-09 13:55:08,174 [INFO]   subtype=H3N2, length=1410
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 83: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >MN573169|11320.244636 Human|6|NA|H3N2|Australia|A/Victoria/2030/2017|1410
+2026-09-09 13:55:08,174 [INFO]   subtype=H3N2, length=1410
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 84: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ578857|11320.1515228 Human|6|NA|H1N1|Germany|A/Bayern/USAFSAM-17716/2025|1410
+2026-09-09 13:55:08,174 [INFO]   subtype=H1N1, length=1410
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 85: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PZ610287|11320.1516662 Gull|7|MP|H5N1|Germany|A/gull/Germany-SN/VD202605383/2026|1001
+2026-09-09 13:55:08,174 [INFO]   subtype=H5N1, length=1001
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 86: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV821523|11320.1516775 Human|7|MP|H3N2|Malaysia|A/Malaysia/2311121/2023|996
+2026-09-09 13:55:08,174 [INFO]   subtype=H3N2, length=996
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 87: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >MK365834|11320.244680 Pig|7|MP|H1N1|Germany|A/swine/Frontenhausen/9388/2009|1027
+2026-09-09 13:55:08,174 [INFO]   subtype=H1N1, length=1027
+2026-09-09 13:55:08,174 [INFO] EXCLUDED >Cluster 88: reason=singleton
+2026-09-09 13:55:08,174 [INFO]   FASTA header: >PV717820|11320.1516963 Red_Junglefowl|6|NA|H9N2|South_Korea|A/chicken/South_Korea/ZL63/2024|1401
+2026-09-09 13:55:08,174 [INFO]   subtype=H9N2, length=1401
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 89: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MK365786|11320.244597 Pig|7|MP|H1N1|Germany|A/swine/Rheine/9278/2009|1027
+2026-09-09 13:55:08,175 [INFO]   subtype=H1N1, length=1027
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 90: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV717821|11320.1516962 Red_Junglefowl|5|NP|H9N2|South_Korea|A/chicken/South_Korea/ZL63/2024|1497
+2026-09-09 13:55:08,175 [INFO]   subtype=H9N2, length=1497
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 91: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV717824|11320.1516959 Red_Junglefowl|2|PB1|H9N2|South_Korea|A/chicken/South_Korea/ZL63/2024|2274
+2026-09-09 13:55:08,175 [INFO]   subtype=H9N2, length=2274
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 92: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PZ610243|11320.1515568 Duck|2|PB1|H5N2|Singapore|A/duck/Singapore/A-FWL-2004-07-00189/2004|2274
+2026-09-09 13:55:08,175 [INFO]   subtype=H5N2, length=2274
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 93: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MK365790|11320.244604 Pig|3|PA|H1N1|Germany|A/swine/Engelsberg/9321/2009|2233
+2026-09-09 13:55:08,175 [INFO]   subtype=H1N1, length=2233
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 94: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PZ610244|11320.1515566 Duck|1|PB2|H5N2|Singapore|A/duck/Singapore/A-FWL-2004-07-00189/2004|2280
+2026-09-09 13:55:08,175 [INFO]   subtype=H5N2, length=2280
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 95: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PZ578861|11320.1515250 Human|2|PB1|H1N1|Germany|A/Bayern/USAFSAM-17716/2025|2274
+2026-09-09 13:55:08,175 [INFO]   subtype=H1N1, length=2274
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 96: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV717832|11320.1516951 Environment|2|PB1|H9N2|South_Korea|A/environment/South_Korea/ZL12/2023|2274
+2026-09-09 13:55:08,175 [INFO]   subtype=H9N2, length=2274
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 97: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV821519|11320.1516779 Human|3|PA|H3N2|Malaysia|A/Malaysia/2311121/2023|2211
+2026-09-09 13:55:08,175 [INFO]   subtype=H3N2, length=2211
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 98: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV819169|11320.1516923 Human|3|PA|H3N2|Malaysia|A/Malaysia/2305064/2023|2205
+2026-09-09 13:55:08,175 [INFO]   subtype=H3N2, length=2205
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 99: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PZ610283|11320.1516669 Gull|3|PA|H5N1|Germany|A/gull/Germany-SN/VD202605383/2026|2204
+2026-09-09 13:55:08,175 [INFO]   subtype=H5N1, length=2204
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 100: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MK365838|11320.244666 Pig|3|PA|H1N1|Germany|A/swine/Freren/9658/2009|2233
+2026-09-09 13:55:08,175 [INFO]   subtype=H1N1, length=2233
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 101: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MK365830|11320.244667 Pig|3|PA|H1N1|Germany|A/swine/Frontenhausen/9388/2009|2233
+2026-09-09 13:55:08,175 [INFO]   subtype=H1N1, length=2233
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 102: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV819177|11320.1516916 Human|3|PA|H3N2|Malaysia|A/Malaysia/2305082/2023|2211
+2026-09-09 13:55:08,175 [INFO]   subtype=H3N2, length=2211
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 103: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MK365829|11320.244675 Pig|2|PB1|H1N1|Germany|A/swine/Frontenhausen/9388/2009|2341
+2026-09-09 13:55:08,175 [INFO]   subtype=H1N1, length=2341
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 104: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV895394|11520.122209 Human|1|PB1|Victoria|Hawaii|B/Hawaii/10/2025|2340
+2026-09-09 13:55:08,175 [INFO]   subtype=Victoria, length=2340
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 105: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MN573189|11320.244671 Human|2|PB1|H3N2|Australia|A/Victoria/2036/2018|2316
+2026-09-09 13:55:08,175 [INFO]   subtype=H3N2, length=2316
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 106: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV895393|11520.122210 Human|2|PB2|Victoria|Hawaii|B/Hawaii/10/2025|2367
+2026-09-09 13:55:08,175 [INFO]   subtype=Victoria, length=2367
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 107: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MK365789|11320.244605 Pig|2|PB1|H1N1|Germany|A/swine/Engelsberg/9321/2009|2341
+2026-09-09 13:55:08,175 [INFO]   subtype=H1N1, length=2341
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 108: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MK365828|11320.244673 Pig|1|PB2|H1N1|Germany|A/swine/Frontenhausen/9388/2009|2341
+2026-09-09 13:55:08,175 [INFO]   subtype=H1N1, length=2341
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 109: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >MN573150|11320.244606 Human|1|PB2|H3N2|Australia|A/Victoria/2019/2017|2290
+2026-09-09 13:55:08,175 [INFO]   subtype=H3N2, length=2290
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 110: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV717833|11320.1516950 Environment|1|PB2|H9N2|South_Korea|A/environment/South_Korea/ZL12/2023|2280
+2026-09-09 13:55:08,175 [INFO]   subtype=H9N2, length=2280
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 111: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PV717825|11320.1516958 Red_Junglefowl|1|PB2|H9N2|South_Korea|A/chicken/South_Korea/ZL63/2024|2280
+2026-09-09 13:55:08,175 [INFO]   subtype=H9N2, length=2280
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 112: reason=singleton
+2026-09-09 13:55:08,175 [INFO]   FASTA header: >PZ610281|11320.1516668 Gull|1|PB2|H5N1|Germany|A/gull/Germany-SN/VD202605383/2026|2316
+2026-09-09 13:55:08,175 [INFO]   subtype=H5N1, length=2316
+2026-09-09 13:55:08,175 [INFO] EXCLUDED >Cluster 113: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ610282|11320.1516667 Gull|2|PB1|H5N1|Germany|A/gull/Germany-SN/VD202605383/2026|2306
+2026-09-09 13:55:08,176 [INFO]   subtype=H5N1, length=2306
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 114: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV821517|11320.1516781 Human|1|PB2|H3N2|Malaysia|A/Malaysia/2311121/2023|2294
+2026-09-09 13:55:08,176 [INFO]   subtype=H3N2, length=2294
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 115: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ581253|11320.1514527 Red_Junglefowl|3|PA|H9N2|Mozambique|A/chicken/Mozambique/305/2026|2151
+2026-09-09 13:55:08,176 [INFO]   subtype=H9N2, length=2151
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 116: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV819178|11320.1516914 Human|4|HA|H3N2|Malaysia|A/Malaysia/2305082/2023|1666
+2026-09-09 13:55:08,176 [INFO]   subtype=H3N2, length=1666
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 117: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >MK365792|11320.244600 Pig|5|NP|H1N1|Germany|A/swine/Engelsberg/9321/2009|1565
+2026-09-09 13:55:08,176 [INFO]   subtype=H1N1, length=1565
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 118: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >MK365832|11320.244663 Pig|5|NP|H1N1|Germany|A/swine/Frontenhausen/9388/2009|1565
+2026-09-09 13:55:08,176 [INFO]   subtype=H1N1, length=1565
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 119: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ610237|11320.1515574 Duck|4|HA|H5N2|Singapore|A/duck/Singapore/A-FWL-2004-07-00189/2004|1695
+2026-09-09 13:55:08,176 [INFO]   subtype=H5N2, length=1695
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 120: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV717826|11320.1516957 Environment|4|HA|H9N2|South_Korea|A/environment/South_Korea/ZL12/2023|1683
+2026-09-09 13:55:08,176 [INFO]   subtype=H9N2, length=1683
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 121: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV717818|11320.1516965 Red_Junglefowl|4|HA|H9N2|South_Korea|A/chicken/South_Korea/ZL63/2024|1683
+2026-09-09 13:55:08,176 [INFO]   subtype=H9N2, length=1683
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 122: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV819179|11320.1516913 Human|5|NP|H3N2|Malaysia|A/Malaysia/2305082/2023|1519
+2026-09-09 13:55:08,176 [INFO]   subtype=H3N2, length=1519
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 123: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ581255|11320.1514525 Red_Junglefowl|5|NP|H9N2|Mozambique|A/chicken/Mozambique/305/2026|1498
+2026-09-09 13:55:08,176 [INFO]   subtype=H9N2, length=1498
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 124: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV717829|11320.1516954 Environment|5|NP|H9N2|South_Korea|A/environment/South_Korea/ZL12/2023|1497
+2026-09-09 13:55:08,176 [INFO]   subtype=H9N2, length=1497
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 125: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ610285|11320.1516665 Gull|5|NP|H5N1|Germany|A/gull/Germany-SN/VD202605383/2026|1540
+2026-09-09 13:55:08,176 [INFO]   subtype=H5N1, length=1540
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 126: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >MN573146|11320.244598 Human|5|NP|H3N2|Australia|A/Victoria/2019/2017|1538
+2026-09-09 13:55:08,176 [INFO]   subtype=H3N2, length=1538
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 127: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV723628|11520.116927 Human|6|NA|Victoria|Alaska|B/Alaska/01/2025|1528
+2026-09-09 13:55:08,176 [INFO]   subtype=Victoria, length=1528
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 128: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV717823|11320.1516960 Red_Junglefowl|3|PA|H9N2|South_Korea|A/chicken/South_Korea/ZL63/2024|2151
+2026-09-09 13:55:08,176 [INFO]   subtype=H9N2, length=2151
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 129: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ610242|11320.1515567 Duck|3|PA|H5N2|Singapore|A/duck/Singapore/A-FWL-2004-07-00189/2004|2151
+2026-09-09 13:55:08,176 [INFO]   subtype=H5N2, length=2151
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 130: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV819516|11320.1516868 Human|2|PB1|H3N2|Malaysia|A/Malaysia/2305059/2023|2115
+2026-09-09 13:55:08,176 [INFO]   subtype=H3N2, length=2115
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 131: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ579128|11320.1515160 Human|3|PA|H1N1|Japan|A/Tokyo/USAFSAM-17738/2026|2151
+2026-09-09 13:55:08,176 [INFO]   subtype=H1N1, length=2151
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 132: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ578860|11320.1515251 Human|3|PA|H1N1|Germany|A/Bayern/USAFSAM-17716/2025|2151
+2026-09-09 13:55:08,176 [INFO]   subtype=H1N1, length=2151
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 133: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV717831|11320.1516952 Environment|3|PA|H9N2|South_Korea|A/environment/South_Korea/ZL12/2023|2151
+2026-09-09 13:55:08,176 [INFO]   subtype=H9N2, length=2151
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 134: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ610284|11320.1516666 Gull|4|HA|H5N1|Germany|A/gull/Germany-SN/VD202605383/2026|1747
+2026-09-09 13:55:08,176 [INFO]   subtype=H5N1, length=1747
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 135: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PV821520|11320.1516778 Human|4|HA|H3N2|Malaysia|A/Malaysia/2311121/2023|1718
+2026-09-09 13:55:08,176 [INFO]   subtype=H3N2, length=1718
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 136: reason=singleton
+2026-09-09 13:55:08,176 [INFO]   FASTA header: >PZ578855|11320.1515226 Human|4|HA|H1N1|Germany|A/Bayern/USAFSAM-17716/2025|1701
+2026-09-09 13:55:08,176 [INFO]   subtype=H1N1, length=1701
+2026-09-09 13:55:08,176 [INFO] EXCLUDED >Cluster 137: reason=singleton
+2026-09-09 13:55:08,177 [INFO]   FASTA header: >PV724355|11520.116202 Human|5|NP|Victoria|Iowa|B/Iowa/20/2025|1814
+2026-09-09 13:55:08,177 [INFO]   subtype=Victoria, length=1814
+2026-09-09 13:55:08,177 [INFO] EXCLUDED >Cluster 138: reason=singleton
+2026-09-09 13:55:08,177 [INFO]   FASTA header: >MK365831|11320.244661 Pig|4|HA|H1N1|Germany|A/swine/Frontenhausen/9388/2009|1778
+2026-09-09 13:55:08,177 [INFO]   subtype=H1N1, length=1778
+2026-09-09 13:55:08,177 [INFO] EXCLUDED >Cluster 139: reason=singleton
+2026-09-09 13:55:08,177 [INFO]   FASTA header: >MK365791|11320.244602 Pig|4|HA|H1N1|Germany|A/swine/Engelsberg/9321/2009|1777
+2026-09-09 13:55:08,177 [INFO]   subtype=H1N1, length=1777
+2026-09-09 13:55:08,177 [INFO] 
+2026-09-09 13:55:08,177 [INFO] ======================================================================
+2026-09-09 13:55:08,177 [INFO] REPRESENTATIVE SELECTION SUMMARY
+2026-09-09 13:55:08,177 [INFO] ======================================================================
+2026-09-09 13:55:08,177 [INFO] Total CD-HIT clusters: 140
+2026-09-09 13:55:08,177 [INFO] Selected representatives: 63
+2026-09-09 13:55:08,177 [INFO] Excluded clusters: 77
+2026-09-09 13:55:08,177 [INFO] 
+2026-09-09 13:55:08,177 [INFO] Exclusion reasons:
+2026-09-09 13:55:08,177 [INFO]   singleton: 77
+2026-09-09 13:55:08,177 [INFO] ======================================================================
+2026-09-09 13:55:08,187 [INFO] Representative sequences saved to sequences_influenza_ab_test.selected_0.99.clstr
+2026-09-09 13:55:08,187 [INFO] Finished. Selected 63 representatives.

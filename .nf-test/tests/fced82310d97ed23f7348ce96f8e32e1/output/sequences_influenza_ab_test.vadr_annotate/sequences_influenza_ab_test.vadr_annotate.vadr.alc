@@ -1,0 +1,6 @@
+#     alert     causes   short                   per    num   num  long       
+#idx  code      failure  description            type  cases  seqs  description
+#---  --------  -------  ------------------  -------  -----  ----  -----------
+1     cdsstopn  yes*     CDS_HAS_STOP_CODON  feature      1     1  in-frame stop codon exists 5' of stop position predicted by homology to reference
+2     cdsstopp  yes*     CDS_HAS_STOP_CODON  feature      1     1  stop codon in protein-based alignment
+#---  --------  -------  ------------------  -------  -----  ----  -----------

@@ -1,2 +1,7 @@
 .DS_Store
 pipeline_info/*.{html,json,txt,yml}
+sequences_influenza_ab_test.selected_0.99.log
+sequences_influenza_ab_test.vadr_annotate/*.cmd
+sequences_influenza_ab_test.vadr_annotate/*.log
+sequences_influenza_ab_test_cds.fasta.log
+sequences_influenza_ab_test_qc.log

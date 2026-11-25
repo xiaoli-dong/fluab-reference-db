@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: bvbrc
+Version: 0.2.1
+Summary: A python interface to the BV-BRC Data API
+Project-URL: documentation, https://bvbrc.readthedocs.io
+Project-URL: soure, https://github.com/abates20/bvbrc
+Project-URL: issues, https://github.com/abates20/bvbrc/issues
+Author-email: Adam Bates <adambates923@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: BV-BRC
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Requires-Dist: requests>=2.32.3
+Provides-Extra: docs
+Requires-Dist: sphinx-tabs>=3.4.7; extra == 'docs'
+Requires-Dist: sphinx>=7.4.7; extra == 'docs'
+Requires-Dist: sphinxawesome-theme>=5.3.2; extra == 'docs'
+Description-Content-Type: text/markdown
+
+# bvbrc
+
+The [Bacterial and Viral Bioinformatics Resource Center (BV-BRC)](https://bv-brc.org)
+is an online resource for research in bacterial and viral infectious disease.
+BV-BRC provides a [Data API](https://bv-brc.org/api) that can be used to request
+data from BV-BRC in your own workflows.
+
+`bvbrc` is a python package that is intended to make interacting with the BV-BRC
+Data API within python code feel straightfoward and intuitive. Please reference
+the [bvbrc documentation](https://bvbrc.readthedocs.io) for help using `bvbrc`.
+
+## Installation
+
+`bvbrc` can be installed from PyPI using pip:
+
+```shell
+pip install bvbrc
+```
+
+If you want to be able to convert the API responses to a `pandas` or `polars`
+DataFrame, then you must also install the appropriate package:
+
+```shell
+pip install pandas
+```
+
+or
+
+```shell
+pip install polars
+```
+
+## Contributing
+
+This project is open source and contributions are welcome! If you are interested
+in contributing, please take a look at the [contributing guidelines][contributing].
+
+[contributing]: https://github.com/abates20/bvbrc/blob/main/.github/CONTRIBUTING.md

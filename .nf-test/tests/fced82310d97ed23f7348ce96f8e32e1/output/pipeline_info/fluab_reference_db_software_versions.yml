@@ -1,0 +1,5 @@
+CDHIT_CDHITEST:
+  cdhit: 4.8.1
+Workflow:
+    provlab-bioinfo/fluab_reference_db: v0.1.0
+    Nextflow: 26.04.6

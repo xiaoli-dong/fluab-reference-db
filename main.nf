@@ -27,18 +27,18 @@ include { PIPELINE_COMPLETION     } from './subworkflows/local/utils_nfcore_flua
 //
 workflow PROVLABBIOINFO_FLUAB_REFERENCE_DB {
 
-    take:
-    samplesheet // channel: samplesheet read in from --input
+    //take:
 
     main:
 
     //
     // WORKFLOW: Run pipeline
     //
-    FLUAB_REFERENCE_DB (
-        samplesheet,
-        params.outdir,
-    )
+
+    // For single files, use Channel.value()
+
+
+    FLUAB_REFERENCE_DB()
 }
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,7 +58,7 @@ workflow {
         params.monochrome_logs,
         args,
         params.outdir,
-        params.input,
+        //params.input,
         params.help,
         params.help_full,
         params.show_hidden
@@ -67,9 +67,7 @@ workflow {
     //
     // WORKFLOW: Run main workflow
     //
-    PROVLABBIOINFO_FLUAB_REFERENCE_DB (
-        PIPELINE_INITIALISATION.out.samplesheet
-    )
+    PROVLABBIOINFO_FLUAB_REFERENCE_DB ()
     //
     // SUBWORKFLOW: Run completion tasks
     //

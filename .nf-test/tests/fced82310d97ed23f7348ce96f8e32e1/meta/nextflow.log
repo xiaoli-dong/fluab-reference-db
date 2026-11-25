@@ -1,0 +1,207 @@
+Sep-09 13:55:02.481 [main] DEBUG nextflow.cli.Launcher - $> nextflow -quiet -log /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/meta/nextflow.log run /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/../main.nf -c /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/nextflow.config -c /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/nextflow.config -params-file /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/meta/params.json -ansi-log false -profile singularity -with-trace /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/meta/trace.csv -w /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work
+Sep-09 13:55:02.557 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
+Sep-09 13:55:02.580 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/nfs/APL_Genomics/apps/production/NXF_HOME/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
+Sep-09 13:55:02.604 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-09 13:55:02.605 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-09 13:55:02.608 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Sep-09 13:55:02.625 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Sep-09 13:55:02.748 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Sep-09 13:55:02.754 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-09 13:55:02.795 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/nextflow.config
+Sep-09 13:55:02.799 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/nextflow.config
+Sep-09 13:55:02.800 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/nextflow.config
+Sep-09 13:55:02.802 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/nextflow.config
+Sep-09 13:55:02.802 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/nextflow.config
+Sep-09 13:55:02.802 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/nextflow.config
+Sep-09 13:55:02.806 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Sep-09 13:55:02.824 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Sep-09 13:55:03.864 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Sep-09 13:55:04.111 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Sep-09 13:55:04.120 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [debug, conda, mamba, docker, arm64, emulate_amd64, singularity, podman, shifter, charliecloud, apptainer, wave, gpu, test, test_full, abims, adcra, alice, alliance_canada, apollo, arcc, aws_tower, awsbatch, azurebatch, bi, bigpurple, bih, binac2, biohpc_gen, biowulf, bluebear, cambridge, cannon, cbe, ccga_dx, ccga_cau, ceci_dragon2, ceci_nic5, cedars, ceres, cfc, cfc_dev, cheaha, computerome, create, crg, crick, cropdiversityhpc, crukmi, csiro_petrichor, czbiohub_aws, daisybio, denbi_qbic, dkfz, dirac, ebc, eddie, ebi_codon, ebi_codon_slurm, einstein, embl_hd, engaging, ethz_euler, eva, eva_grace, fgcz, fred_hutch, fsu_draco, fub_curta, genotoul, genouest, giga, gis, googlebatch, hasta, hazel, hki_genie, hypatia, humantechnopole, icr_alma, ifb_core, imb, imperial, incliva, ipop_up, iris, janelia, jax, jex, unsw_katana, ku_sund_danhead, kaust, kelvin2, ki_luria, leicester, lovelace, lrz_cm4, lugh, m3c, maestro, mahuika, mana, marjorie, marvin, mccleary, mcw_rcc, medair, mjolnir_globe, mpcdf, mpcdf_viper, mssm, munin, naiss, nci_gadi, nu_genomics, nygc, nyu_hpc, oist, palmetto, pasteur, pawsey_setonix, pdc_kth, phoenix, psmn, purdue_bell, purdue_gautschi, purdue_negishi, qmul_apocrita, rki, rosalind, rosalind_uge, roslin, saga_sigma2, sage, sahmri, sanger, ilifu, seadragon, seattlechildrens, seawulf, seg_globe, self_hosted_runner, shu_bmrc, stjude, tes, tigem, tubingen_apg, tufts, tuos_stanage, ucd_sonic, ucl_cscluster, ucl_myriad, uct_hpc, uge, unc_lccc, unc_longleaf, unibe_ibu, unity, uod_hpc, uppmax, utd_juno, uw_hyak_pedslabs, uzh, uzl_omics, vai, verily_workbench, vsc_calcua, vsc_kul_uhasselt, vsc_ugent, wehi, xanadu, york_viking]
+Sep-09 13:55:04.164 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.5.1]
+Sep-09 13:55:04.165 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-09 13:55:04.165 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.5.1]
+Sep-09 13:55:04.168 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.5.1
+Sep-09 13:55:04.180 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.5.1' resolved
+Sep-09 13:55:04.181 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.5.1'
+Sep-09 13:55:04.188 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.5.1
+Sep-09 13:55:04.197 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /nfs/APL_Genomics/apps/production/NXF_HOME/secrets/store.json
+Sep-09 13:55:04.199 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@78d73b1b] - activable => nextflow.secret.LocalSecretsProvider@78d73b1b
+Sep-09 13:55:04.213 [main] INFO  nextflow.cli.CmdRun - Launching `/nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/../main.nf` [zen_hirsch] - revision: 550a010b01
+Sep-09 13:55:04.216 [main] ERROR org.pf4j.AbstractExtensionFinder - Different class loaders: 'org.pf4j.PluginClassLoader@4aaecabd' (E) and 'jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487' (EP)
+Sep-09 13:55:04.241 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.defaultIgnoreParams'
+Sep-09 13:55:04.241 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.monochromeLogs'
+Sep-09 13:55:04.288 [main] DEBUG nextflow.Session - Session UUID: 8c0da7ea-4c68-4f83-b52f-4337dd241477
+Sep-09 13:55:04.289 [main] DEBUG nextflow.Session - Run name: zen_hirsch
+Sep-09 13:55:04.290 [main] DEBUG nextflow.Session - Executor pool size: 24
+Sep-09 13:55:04.299 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-09 13:55:04.305 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-09 13:55:04.327 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.6 build 12646
+  Created: 09-07-2026 18:49 UTC (12:49 MDT)
+  System: Linux 4.18.0-553.148.1.el8_10.x86_64
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 4130725@uxaplgnmxapp06 [127.0.1.1]
+  CPUs: 24 - Mem: 156.9 GB (37 GB) - Swap: 4 GB (3.7 GB)
+Sep-09 13:55:04.356 [main] DEBUG nextflow.Session - Work-dir: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work [nfs]
+Sep-09 13:55:04.390 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-09 13:55:04.399 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-09 13:55:04.401 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Sep-09 13:55:04.415 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
+Sep-09 13:55:04.438 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-09 13:55:04.445 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 25; maxThreads: 1000
+Sep-09 13:55:04.576 [main] DEBUG nextflow.Session - Session start
+Sep-09 13:55:04.584 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/meta/trace.csv
+Sep-09 13:55:04.589 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Sep-09 13:55:05.458 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-09 13:55:05.466 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Sep-09 13:55:05.478 [main] DEBUG n.validation.config.ValidationConfig - Set `validation.monochromeLogs` to true due to the ANSI log settings.
+Sep-09 13:55:05.480 [main] DEBUG n.validation.config.ValidationConfig - Added the following parameters to the ignored parameters: [genomes]
+Sep-09 13:55:05.633 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Sep-09 13:55:05.634 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Sep-09 13:55:05.634 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Sep-09 13:55:05.636 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Sep-09 13:55:05.637 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Sep-09 13:55:05.637 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Sep-09 13:55:05.718 [main] INFO  nextflow.Nextflow - 
+Sep-09 13:55:05.759 [main] INFO  nextflow.Nextflow - Input/output options
+  outdir                      : /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/output
+
+Generic options
+  pipelines_testdata_base_path: https://raw.githubusercontent.com/nf-core/test-datasets/fluab_reference_db/
+  trace_report_suffix         : 2026-09-09_13-55-03
+
+Other parameters
+  db_version                  : influenza_ab_test
+  seq_json_file               : /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/test_data/influenza_ab_sequences_raw.json
+  meta_json_file              : /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/test_data/influenza_ab_meta_raw.json
+
+Core Nextflow options
+  runName                     : zen_hirsch
+  containerEngine             : singularity
+  launchDir                   : /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1
+  workDir                     : /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work
+  projectDir                  : /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db
+  userName                    : xiaolidong
+  profile                     : singularity
+  configFiles                 : /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/nextflow.config, /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/nextflow.config, /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/nextflow.config
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+Sep-09 13:55:05.760 [main] INFO  nextflow.Nextflow - 
+Sep-09 13:55:05.768 [main] DEBUG n.v.parameters.ParameterValidator - Starting parameters validation
+Sep-09 13:55:05.894 [main] WARN  n.v.logging.ValidationLogger - The following invalid input values have been detected:
+
+* --modules_testdata_base_path: https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/
+
+
+Sep-09 13:55:05.896 [main] DEBUG n.v.parameters.ParameterValidator - Finishing parameters validation
+Sep-09 13:55:05.941 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:BVBRC_GETFASTA
+Sep-09 13:55:05.943 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:BVBRC_GETFASTA` matches process PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:BVBRC_GETFASTA
+Sep-09 13:55:05.947 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-09 13:55:05.947 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 13:55:05.954 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-09 13:55:05.960 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=24; memory=156.9 GB; capacity=24; pollInterval=100ms; dumpInterval=5m
+Sep-09 13:55:05.962 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-09 13:55:05.993 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:BVBRC_GETFASTA': maxForks=0; fair=false; array=0
+Sep-09 13:55:06.022 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:CDHIT_CDHITEST
+Sep-09 13:55:06.022 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CDHIT_CDHITEST` matches process PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:CDHIT_CDHITEST
+Sep-09 13:55:06.024 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-09 13:55:06.024 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 13:55:06.025 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:CDHIT_CDHITEST': maxForks=0; fair=false; array=0
+Sep-09 13:55:06.036 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:PICKREPS
+Sep-09 13:55:06.037 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PICKREPS` matches process PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:PICKREPS
+Sep-09 13:55:06.039 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-09 13:55:06.039 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 13:55:06.040 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:PICKREPS': maxForks=0; fair=false; array=0
+Sep-09 13:55:06.044 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_TRIM
+Sep-09 13:55:06.045 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:VADR_TRIM` matches process PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_TRIM
+Sep-09 13:55:06.046 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-09 13:55:06.046 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 13:55:06.047 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_TRIM': maxForks=0; fair=false; array=0
+Sep-09 13:55:06.052 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_ANNOTATE
+Sep-09 13:55:06.053 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:VADR_ANNOTATE` matches process PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_ANNOTATE
+Sep-09 13:55:06.056 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-09 13:55:06.056 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 13:55:06.058 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_ANNOTATE': maxForks=0; fair=false; array=0
+Sep-09 13:55:06.067 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_EXTRACTCDS
+Sep-09 13:55:06.068 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:VADR_EXTRACTCDS` matches process PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_EXTRACTCDS
+Sep-09 13:55:06.069 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-09 13:55:06.069 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 13:55:06.071 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_EXTRACTCDS': maxForks=0; fair=false; array=0
+Sep-09 13:55:06.074 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:DBSTATS
+Sep-09 13:55:06.075 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DBSTATS` matches process PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:DBSTATS
+Sep-09 13:55:06.076 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-09 13:55:06.076 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-09 13:55:06.077 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:DBSTATS': maxForks=0; fair=false; array=0
+Sep-09 13:55:06.127 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Sep-09 13:55:06.131 [main] DEBUG nextflow.Session - Igniting dataflow network (13)
+Sep-09 13:55:06.137 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:BVBRC_GETFASTA
+Sep-09 13:55:06.137 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:CDHIT_CDHITEST
+Sep-09 13:55:06.137 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:PICKREPS
+Sep-09 13:55:06.137 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_TRIM
+Sep-09 13:55:06.137 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_ANNOTATE
+Sep-09 13:55:06.138 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_EXTRACTCDS
+Sep-09 13:55:06.139 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:DBSTATS
+Sep-09 13:55:06.140 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_e0b0b88c4d426e8f: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/modules/local/vadr/extractcds/main.nf
+  _nf_script_1e3135323dea16e4: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/modules/nf-core/cdhit/cdhitest/main.nf
+  _nf_script_cab95a772a08b11e: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/modules/nf-core/mash/sketch/main.nf
+  _nf_script_1bf11f7b846dcdd1: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/modules/local/dbstats.nf
+  _nf_script_170c3b8a3acf4c85: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/modules/local/pickreps.nf
+  _nf_script_07b3983558d03f4e: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  _nf_script_a2623457da315135: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/modules/local/vadr/trim/main.nf
+  _nf_script_1b4e348c6f82fcf2: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/subworkflows/local/utils_nfcore_fluab_reference_db_pipeline/main.nf
+  _nf_script_2c3abf13a50db979: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/modules/local/bvbrc/getfasta/main.nf
+  _nf_script_87bbf7149ba8e616: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/modules/local/vadr/annotate/main.nf
+  _nf_script_19d57027d6d6c90e: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/workflows/fluab_reference_db.nf
+  _nf_script_151e55c60d632275: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/subworkflows/nf-core/utils_nextflow_pipeline/main.nf
+  _nf_script_2333d4a634b7df81: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/subworkflows/nf-core/utils_nfschema_plugin/main.nf
+  Main: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/main.nf
+Sep-09 13:55:06.140 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-09 13:55:06.142 [main] DEBUG nextflow.Session - Session await
+Sep-09 13:55:06.232 [Actor Thread 25] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/python:3.12; path=/nfs/APL_Genomics/apps/production/NXF_HOME/NXF_SINGULARITY_CACHEDIR/depot.galaxyproject.org-singularity-python-3.12.img
+Sep-09 13:55:06.313 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-09 13:55:06.315 [Task submitter] INFO  nextflow.Session - [e6/869890] Submitted process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:BVBRC_GETFASTA (influenza_ab_test)
+Sep-09 13:55:06.927 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:BVBRC_GETFASTA (influenza_ab_test); status: COMPLETED; exit: 0; error: -; workDir: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work/e6/869890c4d85aa9d59daf0a4c8c2647]
+Sep-09 13:55:06.927 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-09 13:55:06.954 [Actor Thread 24] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/cd-hit%3A4.8.1--h5b5514e_7; path=/nfs/APL_Genomics/apps/production/NXF_HOME/NXF_SINGULARITY_CACHEDIR/depot.galaxyproject.org-singularity-cd-hit%3A4.8.1--h5b5514e_7.img
+Sep-09 13:55:06.955 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=72; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-09 13:55:06.975 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-09 13:55:06.976 [Task submitter] INFO  nextflow.Session - [6c/0a45bb] Submitted process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:CDHIT_CDHITEST (influenza_ab_test)
+Sep-09 13:55:07.677 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:CDHIT_CDHITEST (influenza_ab_test); status: COMPLETED; exit: 0; error: -; workDir: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work/6c/0a45bb4d693055465c29e61b56758b]
+Sep-09 13:55:07.713 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-09 13:55:07.714 [Task submitter] INFO  nextflow.Session - [ae/a2feb3] Submitted process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:PICKREPS (influenza_ab_test)
+Sep-09 13:55:07.719 [Actor Thread 22] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 2; slices: 1; internal sort time: 0.014 s; external sort time: 0.002 s; total time: 0.016 s
+Sep-09 13:55:07.732 [Actor Thread 22] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work/collect-file/03d7b538f168dda112c3296fc3b5335b
+Sep-09 13:55:07.741 [Actor Thread 22] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-2328613740491627546
+Sep-09 13:55:08.258 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:PICKREPS (influenza_ab_test); status: COMPLETED; exit: 0; error: -; workDir: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work/ae/a2feb3e29f7a4d19ebe8705d1eb80a]
+Sep-09 13:55:08.265 [Actor Thread 18] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/vadr:1.6.4--pl5321h87e0c26_1; path=/nfs/APL_Genomics/apps/production/NXF_HOME/NXF_SINGULARITY_CACHEDIR/depot.galaxyproject.org-singularity-vadr-1.6.4--pl5321h87e0c26_1.img
+Sep-09 13:55:08.283 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-09 13:55:08.283 [Task submitter] INFO  nextflow.Session - [50/af9d6c] Submitted process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_TRIM (influenza_ab_test)
+Sep-09 13:55:08.654 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_TRIM (influenza_ab_test); status: COMPLETED; exit: 0; error: -; workDir: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work/50/af9d6c678de5882626c2a27e9823d2]
+Sep-09 13:55:08.680 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-09 13:55:08.680 [Task submitter] INFO  nextflow.Session - [36/36982a] Submitted process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_ANNOTATE (influenza_ab_test)
+Sep-09 13:55:56.402 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_ANNOTATE (influenza_ab_test); status: COMPLETED; exit: 0; error: -; workDir: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work/36/36982a404fe12a19faf80efc36a0ef]
+Sep-09 13:55:56.465 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-09 13:55:56.466 [Task submitter] INFO  nextflow.Session - [66/3388c7] Submitted process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_EXTRACTCDS (influenza_ab_test)
+Sep-09 13:55:57.180 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:VADR_EXTRACTCDS (influenza_ab_test); status: COMPLETED; exit: 0; error: -; workDir: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work/66/3388c728161da0b118728a7585f5d7]
+Sep-09 13:55:57.206 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-09 13:55:57.207 [Task submitter] INFO  nextflow.Session - [e6/8b2687] Submitted process > PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:DBSTATS (influenza_ab_test)
+Sep-09 13:55:57.676 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: PROVLABBIOINFO_FLUAB_REFERENCE_DB:FLUAB_REFERENCE_DB:DBSTATS (influenza_ab_test); status: COMPLETED; exit: 0; error: -; workDir: /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/.nf-test/tests/fced82310d97ed23f7348ce96f8e32e1/work/e6/8b268706c93fe0d9b01be5756a431a]
+Sep-09 13:55:57.682 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-09 13:55:57.776 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-09 13:55:57.777 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-09 13:55:57.779 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Sep-09 13:55:57.780 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Sep-09 13:55:57.785 [main] INFO  nextflow.Nextflow - -[0;35m[provlab-bioinfo/fluab_reference_db][0;32m Pipeline completed successfully[0m-
+Sep-09 13:55:57.790 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=52s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=6; peakMemory=36 GB; ]
+Sep-09 13:55:57.811 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Sep-09 13:55:58.400 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Sep-09 13:55:58.476 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Sep-09 13:55:58.492 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-09 13:55:58.507 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.5.1'
+Sep-09 13:55:58.507 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+Sep-09 13:55:58.508 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-09 13:55:58.509 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

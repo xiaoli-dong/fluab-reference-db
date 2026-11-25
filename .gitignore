@@ -8,3 +8,8 @@ testing*
 *.pyc
 null/
 .lineage/
+bin/containers/bvbrc.sif
+resource/
+tests/test_data/*
+.venv
+test/

@@ -1,0 +1,23 @@
+#                                     num   num   num
+#idx  model     group      subgroup  seqs  pass  fail
+#---  --------  ---------  --------  ----  ----  ----
+1     CY002009  fluA-seg7  -            8     8     0
+2     CY002000  fluA-seg4  H3           7     7     0
+3     CY002079  fluA-seg1  -            7     7     0
+4     CY003646  fluA-seg2  -            6     6     0
+5     CY006079  fluA-seg5  -            6     6     0
+6     CY002284  fluA-seg8  -            5     5     0
+7     CY002010  fluA-seg6  N2           4     4     0
+8     CY003645  fluA-seg3  -            4     4     0
+9     AF387493  fluB-seg4  -            3     3     0
+10    AY191501  fluB-seg6  -            3     3     0
+11    AY504605  fluB-seg7  -            2     2     0
+12    CY000449  fluA-seg4  H1           2     2     0
+13    CY002538  fluA-seg6  N1           2     2     0
+14    EF626631  fluB-seg5  -            2     2     0
+15    AY504614  fluB-seg8  -            1     1     0
+16    EF626633  fluB-seg3  -            1     1     0
+#---  --------  ---------  --------  ----  ----  ----
+-     *all*     -          -           63    63     0
+-     *none*    -          -            0     0     0
+#---  --------  ---------  --------  ----  ----  ----

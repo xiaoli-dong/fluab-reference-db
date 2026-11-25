@@ -1,0 +1,90 @@
+# v-annotate.pl :: classify and annotate sequences using a model library
+# VADR 1.6.4 (Jun 2024)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# date:              Wed Sep  9 13:55:09 2026
+# $VADRBIOEASELDIR:  /usr/local/bin
+# $VADRBLASTDIR:     /usr/local/bin
+# $VADREASELDIR:     /usr/local/bin
+# $VADRINFERNALDIR:  /usr/local/bin
+# $VADRMODELDIR:     /usr/local/share/vadr-1.6.4/vadr-models
+# $VADRSCRIPTSDIR:   /usr/local/share/vadr-1.6.4/vadr
+#
+# sequence file:                                                                  sequences_influenza_ab_test.vadr_trim.fasta
+# output directory:                                                               sequences_influenza_ab_test.vadr_annotate
+# only consider ATG a valid start codon:                                          yes [--atgonly]
+# specify that alert codes in <s> cause FAILure:                                  extrant5,extrant3 [--alt_fail]
+# .cm, .minfo, blastn .fa files in $VADRMODELDIR start with key <s>, not 'vadr':  flu [--mkey]
+# model files are in directory <s>, not in $VADRMODELDIR:                         /nfs/APL_Genomics/db/prod/vadr/vadr-models-flu-1.6.3-2 [--mdir]
+# in feature table for failed seqs, never change feature type to misc_feature:    yes [--nomisc]
+# turn off composition-based for blastx statistics with -comp_based_stats 0:      yes [--xnocomp]
+# replace stretches of Ns with expected nts, where possible:                      yes [-r]
+# split input file into chunks, run each chunk separately:                        yes [--split]
+# parallelize across <n> CPU workers (requires --split or --glsearch):            1 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Validating input                                                                                          ... done. [    0.2 seconds]
+# Splitting sequence file into chunks to run independently                                                  ... done. [    0.0 seconds]
+# Executing 1 script to process 1 partition(s) of all 63 sequence(s)                                        ... done. [   46.8 seconds]
+# Merging and finalizing output                                                                             ... done. [    0.2 seconds]
+#
+# Summary of classified sequences:
+#
+#                                     num   num   num
+#idx  model     group      subgroup  seqs  pass  fail
+#---  --------  ---------  --------  ----  ----  ----
+1     CY002009  fluA-seg7  -            8     8     0
+2     CY002000  fluA-seg4  H3           7     7     0
+3     CY002079  fluA-seg1  -            7     7     0
+4     CY003646  fluA-seg2  -            6     6     0
+5     CY006079  fluA-seg5  -            6     6     0
+6     CY002284  fluA-seg8  -            5     5     0
+7     CY002010  fluA-seg6  N2           4     4     0
+8     CY003645  fluA-seg3  -            4     4     0
+9     AF387493  fluB-seg4  -            3     3     0
+10    AY191501  fluB-seg6  -            3     3     0
+11    AY504605  fluB-seg7  -            2     2     0
+12    CY000449  fluA-seg4  H1           2     2     0
+13    CY002538  fluA-seg6  N1           2     2     0
+14    EF626631  fluB-seg5  -            2     2     0
+15    AY504614  fluB-seg8  -            1     1     0
+16    EF626633  fluB-seg3  -            1     1     0
+#---  --------  ---------  --------  ----  ----  ----
+-     *all*     -          -           63    63     0
+-     *none*    -          -            0     0     0
+#---  --------  ---------  --------  ----  ----  ----
+#
+# Summary of reported alerts:
+#
+#     alert     causes   short                   per    num   num  long
+#idx  code      failure  description            type  cases  seqs  description
+#---  --------  -------  ------------------  -------  -----  ----  -----------
+1     cdsstopn  yes*     CDS_HAS_STOP_CODON  feature      1     1  in-frame stop codon exists 5' of stop position predicted by homology to reference
+2     cdsstopp  yes*     CDS_HAS_STOP_CODON  feature      1     1  stop codon in protein-based alignment
+#---  --------  -------  ------------------  -------  -----  ----  -----------
+#
+# Output printed to screen saved in:                              sequences_influenza_ab_test.vadr_annotate.vadr.log
+# List of executed commands saved in:                             sequences_influenza_ab_test.vadr_annotate.vadr.cmd
+# List and description of all output files saved in:              sequences_influenza_ab_test.vadr_annotate.vadr.filelist
+# esl-seqstat -a output for input fasta file saved in:            sequences_influenza_ab_test.vadr_annotate.vadr.seqstat
+# 5 column feature table output for passing sequences saved in:   sequences_influenza_ab_test.vadr_annotate.vadr.pass.tbl
+# 5 column feature table output for failing sequences saved in:   sequences_influenza_ab_test.vadr_annotate.vadr.fail.tbl
+# list of passing sequences saved in:                             sequences_influenza_ab_test.vadr_annotate.vadr.pass.list
+# list of failing sequences saved in:                             sequences_influenza_ab_test.vadr_annotate.vadr.fail.list
+# list of alerts in the feature tables saved in:                  sequences_influenza_ab_test.vadr_annotate.vadr.alt.list
+# fasta file with passing sequences saved in:                     sequences_influenza_ab_test.vadr_annotate.vadr.pass.fa
+# fasta file with failing sequences saved in:                     sequences_influenza_ab_test.vadr_annotate.vadr.fail.fa
+# per-sequence tabular annotation summary file saved in:          sequences_influenza_ab_test.vadr_annotate.vadr.sqa
+# per-sequence tabular classification summary file saved in:      sequences_influenza_ab_test.vadr_annotate.vadr.sqc
+# per-feature tabular summary file saved in:                      sequences_influenza_ab_test.vadr_annotate.vadr.ftr
+# per-model-segment tabular summary file saved in:                sequences_influenza_ab_test.vadr_annotate.vadr.sgm
+# per-alert tabular summary file saved in:                        sequences_influenza_ab_test.vadr_annotate.vadr.alt
+# alert count tabular summary file saved in:                      sequences_influenza_ab_test.vadr_annotate.vadr.alc
+# per-model tabular summary file saved in:                        sequences_influenza_ab_test.vadr_annotate.vadr.mdl
+# alignment doctoring tabular summary file saved in:              sequences_influenza_ab_test.vadr_annotate.vadr.dcr
+# replaced stretches of Ns summary file (-r) saved in:            sequences_influenza_ab_test.vadr_annotate.vadr.rpn
+#
+# All output files created in directory ./sequences_influenza_ab_test.vadr_annotate/
+#
+# Elapsed time:  00:00:47.17
+#                hh:mm:ss
+# 
+[ok]

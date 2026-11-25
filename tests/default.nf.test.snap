@@ -1,0 +1,87 @@
+{
+    "-profile test,singularity": {
+        "content": [
+            {
+                "CDHIT_CDHITEST": {
+                    "cdhit": "4.8.1"
+                },
+                "Workflow": {
+                    "provlab-bioinfo/fluab_reference_db": "v0.1.0"
+                }
+            },
+            [
+                "pipeline_info",
+                "pipeline_info/fluab_reference_db_software_versions.yml",
+                "sequences_influenza_ab_test.cd-hit-est_0.99.fa",
+                "sequences_influenza_ab_test.cd-hit-est_0.99.fa.clstr",
+                "sequences_influenza_ab_test.selected_0.99.clstr",
+                "sequences_influenza_ab_test.selected_0.99.fasta",
+                "sequences_influenza_ab_test.selected_0.99.log",
+                "sequences_influenza_ab_test.vadr_annotate",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.alc",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.alt",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.alt.list",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.cmd",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.dcr",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.fail.fa",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.fail.list",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.fail.tbl",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.filelist",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.ftr",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.log",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.mdl",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.pass.fa",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.pass.list",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.pass.tbl",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.rpn",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.seqstat",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.sgm",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.sqa",
+                "sequences_influenza_ab_test.vadr_annotate/sequences_influenza_ab_test.vadr_annotate.vadr.sqc",
+                "sequences_influenza_ab_test.vadr_trim.fasta",
+                "sequences_influenza_ab_test_cds.fasta",
+                "sequences_influenza_ab_test_cds.fasta.errors.log",
+                "sequences_influenza_ab_test_cds.fasta.log",
+                "sequences_influenza_ab_test_cds_stats.txt",
+                "sequences_influenza_ab_test_qc.fasta",
+                "sequences_influenza_ab_test_qc.log",
+                "sequences_influenza_ab_test_qc_excluded.fasta"
+            ],
+            [
+                "sequences_influenza_ab_test.cd-hit-est_0.99.fa:md5,f3be28210dab3ed53a3b2fc69cdedbdc",
+                "sequences_influenza_ab_test.cd-hit-est_0.99.fa.clstr:md5,28ffd65fad7d35c4ba7bf51b511a4ac3",
+                "sequences_influenza_ab_test.selected_0.99.clstr:md5,9c1fbfaa4d9d2c445702b55b41d2aacc",
+                "sequences_influenza_ab_test.selected_0.99.fasta:md5,164395b0602b08a9de3558f08dee3693",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.alc:md5,b2c25a89a25b63d54b0e76ad5c78cab3",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.alt:md5,05fc54ff2d14755152c4edf560fda4c0",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.alt.list:md5,fc0e4e38d8484f8547c4cf265f41f7ad",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.dcr:md5,d9b5295b718f16cf523fa42c69c67f7f",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.fail.fa:md5,d41d8cd98f00b204e9800998ecf8427e",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.fail.list:md5,d41d8cd98f00b204e9800998ecf8427e",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.fail.tbl:md5,d41d8cd98f00b204e9800998ecf8427e",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.filelist:md5,d3db07d581f1facc362145b4c679746a",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.ftr:md5,7579141945d736489607576a751e54d2",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.mdl:md5,b07a1044a9b50fe7100a6c3b4efbc2b8",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.pass.fa:md5,d72340f496c4c20196a86d6b54c20369",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.pass.list:md5,cb248809fa39ed07a97ff9b3d6ac6b73",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.pass.tbl:md5,81bf9e1d5402f0e14fc0aac5404f6479",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.rpn:md5,d5fd37e1bc905311230efa96a24e70e9",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.seqstat:md5,9cfd42fb371c9a92c227505c6841ac0e",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.sgm:md5,9ee9d04a790ad8e4a1a39a7d208ffdf5",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.sqa:md5,ba7376289e8a5b7f20304003d7a6b381",
+                "sequences_influenza_ab_test.vadr_annotate.vadr.sqc:md5,70399ddecd9ecef977ec1a09096d99cf",
+                "sequences_influenza_ab_test.vadr_trim.fasta:md5,d72340f496c4c20196a86d6b54c20369",
+                "sequences_influenza_ab_test_cds.fasta:md5,41520e862375eed3ce013f13c433711f",
+                "sequences_influenza_ab_test_cds.fasta.errors.log:md5,d41d8cd98f00b204e9800998ecf8427e",
+                "sequences_influenza_ab_test_cds_stats.txt:md5,a33b77c2222585275ebea371bf29d337",
+                "sequences_influenza_ab_test_qc.fasta:md5,f4342fb07ea22c7b808ea79033e99b1d",
+                "sequences_influenza_ab_test_qc_excluded.fasta:md5,91e1505c4718a0c2777bfec83bbb55cb"
+            ]
+        ],
+        "timestamp": "2026-09-09T13:54:48.061359122",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.6"
+        }
+    }
+}

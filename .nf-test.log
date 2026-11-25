@@ -1,0 +1,16 @@
+Sep-09 13:54:57.093 [main] INFO  com.askimed.nf.test.App - nf-test 0.9.5
+Sep-09 13:54:57.107 [main] INFO  com.askimed.nf.test.App - Arguments: [test, tests/default.nf.test, --profile, singularity]
+Sep-09 13:54:58.003 [main] INFO  com.askimed.nf.test.App - Nextflow Version: 26.04.6
+Sep-09 13:54:58.005 [main] INFO  com.askimed.nf.test.commands.RunTestsCommand - Load config from file /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/nf-test.config...
+Sep-09 13:55:00.881 [main] INFO  com.askimed.nf.test.lang.dependencies.DependencyResolver - Loaded 16 files from directory /nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db in 2.319 sec
+Sep-09 13:55:00.883 [main] INFO  com.askimed.nf.test.lang.dependencies.DependencyResolver - Found 1 files containing tests.
+Sep-09 13:55:00.884 [main] DEBUG com.askimed.nf.test.lang.dependencies.DependencyResolver - Found files: [/nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/default.nf.test]
+Sep-09 13:55:01.071 [main] INFO  com.askimed.nf.test.commands.RunTestsCommand - Found 1 tests to execute.
+Sep-09 13:55:01.072 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Started test plan
+Sep-09 13:55:01.072 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Running testsuite 'Test pipeline' from file '/nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/default.nf.test'.
+Sep-09 13:55:01.073 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Run test 'fced8231: -profile test,singularity'. type: com.askimed.nf.test.lang.pipeline.PipelineTest
+Sep-09 13:55:58.908 [main] DEBUG com.askimed.nf.test.lang.extensions.SnapshotFile - Load snapshots from file '/nfs/Genomics_DEV/projects/xdong/deve/fluab-reference-db/tests/default.nf.test.snap'
+Sep-09 13:55:58.982 [main] DEBUG com.askimed.nf.test.lang.extensions.Snapshot - Snapshots '-profile test,singularity' match.
+Sep-09 13:55:58.983 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Test 'fced8231: -profile test,singularity' finished. status: PASSED
+Sep-09 13:55:58.985 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Testsuite 'Test pipeline' finished. snapshot file: true, skipped tests: false, failed tests: false
+Sep-09 13:55:58.985 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Executed 1 tests. 0 tests failed. Done!

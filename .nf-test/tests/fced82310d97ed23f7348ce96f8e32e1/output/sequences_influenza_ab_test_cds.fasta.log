@@ -1,0 +1,141 @@
+2026-09-09 13:55:57 [INFO] __main__: extract_vadr_cds.py
+2026-09-09 13:55:57 [INFO] __main__: FASTA: sequences_influenza_ab_test.vadr_annotate.vadr.pass.fa
+2026-09-09 13:55:57 [INFO] __main__: SQC: sequences_influenza_ab_test.vadr_annotate.vadr.sqc
+2026-09-09 13:55:57 [INFO] __main__: FTR: sequences_influenza_ab_test.vadr_annotate.vadr.ftr
+2026-09-09 13:55:57 [INFO] __main__: Output: sequences_influenza_ab_test_cds.fasta
+2026-09-09 13:55:57 [INFO] __main__: Minimum length coverage: 0.95
+2026-09-09 13:55:57 [INFO] __main__: Maximum length coverage: None
+2026-09-09 13:55:57 [INFO] __main__: Maximum ambiguous bases: 0
+2026-09-09 13:55:57 [INFO] __main__: Main log: sequences_influenza_ab_test_cds.fasta.log
+2026-09-09 13:55:57 [INFO] __main__: Error log: sequences_influenza_ab_test_cds.fasta.errors.log
+2026-09-09 13:55:57 [INFO] __main__: Read 63 FASTA sequences from sequences_influenza_ab_test.vadr_annotate.vadr.pass.fa
+2026-09-09 13:55:57 [INFO] __main__: Read 63 SQC annotations from sequences_influenza_ab_test.vadr_annotate.vadr.sqc
+2026-09-09 13:55:57 [INFO] __main__: Read PASS gene annotations for 63 sequences from sequences_influenza_ab_test.vadr_annotate.vadr.ftr
+2026-09-09 13:55:57 [INFO] __main__: Starting extraction of 63 FASTA sequences.
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ600286|11320.1516422
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ600286|11320.1516422: segment=fluA-seg4 genes=HA region=27..1727:+ strand=+ length=1701 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ579072|11320.1515216
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ579072|11320.1515216: segment=fluA-seg4 genes=HA region=1..1701:+ strand=+ length=1701 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573149|11320.244599
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573149|11320.244599: segment=fluA-seg2 genes=PB1,PB1-F2 region=8..2281:+ strand=+ length=2274 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573152|11320.244601
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573152|11320.244601: segment=fluA-seg7 genes=M2,M1 region=11..992:+ strand=+ length=982 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573151|11320.244603
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573151|11320.244603: segment=fluA-seg4 genes=HA region=18..1718:+ strand=+ length=1701 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573158|11320.244607
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573158|11320.244607: segment=fluA-seg1 genes=PB2 region=16..2295:+ strand=+ length=2280 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MK365797|11320.244608
+2026-09-09 13:55:57 [INFO] __main__: Extracted MK365797|11320.244608: segment=fluA-seg2 genes=PB1,PB1-F2 region=25..2298:+ strand=+ length=2274 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MK365798|11320.244609
+2026-09-09 13:55:57 [INFO] __main__: Extracted MK365798|11320.244609: segment=fluA-seg3 genes=PA,PA-X region=25..2175:+ strand=+ length=2151 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MK365803|11320.244610
+2026-09-09 13:55:57 [INFO] __main__: Extracted MK365803|11320.244610: segment=fluA-seg8 genes=NEP,NS1 region=27..864:+ strand=+ length=838 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573159|11320.244612
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573159|11320.244612: segment=fluA-seg4 genes=HA region=18..1718:+ strand=+ length=1701 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MK365799|11320.244613
+2026-09-09 13:55:57 [INFO] __main__: Extracted MK365799|11320.244613: segment=fluA-seg4 genes=HA region=33..1733:+ strand=+ length=1701 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MK365802|11320.244614
+2026-09-09 13:55:57 [INFO] __main__: Extracted MK365802|11320.244614: segment=fluA-seg7 genes=M2,M1 region=26..1007:+ strand=+ length=982 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573164|11320.244615
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573164|11320.244615: segment=fluA-seg3 genes=PA,PA-X region=11..2161:+ strand=+ length=2151 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573163|11320.244616
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573163|11320.244616: segment=fluA-seg8 genes=NEP,NS1 region=15..852:+ strand=+ length=838 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MK365804|11320.244617
+2026-09-09 13:55:57 [INFO] __main__: Extracted MK365804|11320.244617: segment=fluA-seg1 genes=PB2 region=28..2307:+ strand=+ length=2280 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MK365800|11320.244618
+2026-09-09 13:55:57 [INFO] __main__: Extracted MK365800|11320.244618: segment=fluA-seg5 genes=NP region=46..1542:+ strand=+ length=1497 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573173|11320.244623
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573173|11320.244623: segment=fluA-seg2 genes=PB1,PB1-F2 region=8..2281:+ strand=+ length=2274 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573170|11320.244629
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573170|11320.244629: segment=fluA-seg5 genes=NP region=31..1527:+ strand=+ length=1497 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MK365809|11320.244644
+2026-09-09 13:55:57 [INFO] __main__: Extracted MK365809|11320.244644: segment=fluA-seg6 genes=NA region=21..1430:+ strand=+ length=1410 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573174|11320.244645
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573174|11320.244645: segment=fluA-seg1 genes=PB2 region=16..2295:+ strand=+ length=2280 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: MN573193|11320.244665
+2026-09-09 13:55:57 [INFO] __main__: Extracted MN573193|11320.244665: segment=fluA-seg6 genes=NA region=8..1417:+ strand=+ length=1410 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ579130|11320.1515159
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ579130|11320.1515159: segment=fluA-seg1 genes=PB2 region=1..2280:+ strand=+ length=2280 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ579126|11320.1515161
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ579126|11320.1515161: segment=fluA-seg5 genes=NP region=1..1497:+ strand=+ length=1497 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ579127|11320.1515162
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ579127|11320.1515162: segment=fluA-seg8 genes=NEP,NS1 region=1..838:+ strand=+ length=838 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ579125|11320.1515164
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ579125|11320.1515164: segment=fluA-seg6 genes=NA region=1..1410:+ strand=+ length=1410 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ579113|11320.1515176
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ579113|11320.1515176: segment=fluA-seg2 genes=PB1,PB1-F2 region=1..2274:+ strand=+ length=2274 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ579124|11320.1515175
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ579124|11320.1515175: segment=fluA-seg7 genes=M2,M1 region=1..982:+ strand=+ length=982 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV821466|11320.1516790
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV821466|11320.1516790: segment=fluA-seg7 genes=M2,M1 region=11..992:+ strand=+ length=982 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV821440|11320.1516801
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV821440|11320.1516801: segment=fluA-seg4 genes=HA region=9..1709:+ strand=+ length=1701 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819535|11320.1516849
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819535|11320.1516849: segment=fluA-seg5 genes=NP region=34..1520:+ strand=+ length=1487 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819531|11320.1516853
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819531|11320.1516853: segment=fluA-seg1 genes=PB2 region=4..2283:+ strand=+ length=2280 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819528|11320.1516856
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819528|11320.1516856: segment=fluA-seg6 genes=NA region=1..1410:+ strand=+ length=1410 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819523|11320.1516861
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819523|11320.1516861: segment=fluA-seg1 genes=PB2 region=4..2283:+ strand=+ length=2280 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819388|11320.1516879
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819388|11320.1516879: segment=fluA-seg8 genes=NEP,NS1 region=13..850:+ strand=+ length=838 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819386|11320.1516880
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819386|11320.1516880: segment=fluA-seg6 genes=NA region=10..1419:+ strand=+ length=1410 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819383|11320.1516882
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819383|11320.1516882: segment=fluA-seg3 genes=PA,PA-X region=13..2163:+ strand=+ length=2151 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819221|11320.1516887
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819221|11320.1516887: segment=fluA-seg7 genes=M2,M1 region=1..982:+ strand=+ length=982 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819384|11320.1516883
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819384|11320.1516883: segment=fluA-seg4 genes=HA region=1..1701:+ strand=+ length=1701 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819181|11320.1516911
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819181|11320.1516911: segment=fluA-seg7 genes=M2,M1 region=18..998:+ strand=+ length=981 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819176|11320.1516915
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819176|11320.1516915: segment=fluA-seg2 genes=PB1,PB1-F2 region=1..2274:+ strand=+ length=2274 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819171|11320.1516921
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819171|11320.1516921: segment=fluA-seg5 genes=NP region=33..1516:+ strand=+ length=1484 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819170|11320.1516922
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819170|11320.1516922: segment=fluA-seg4 genes=HA region=1..1690:+ strand=+ length=1690 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV819162|11320.1516930
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV819162|11320.1516930: segment=fluA-seg4 genes=HA region=1..1636:+ strand=+ length=1636 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV717827|11320.1516956
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV717827|11320.1516956: segment=fluA-seg7 genes=M2,M1 region=26..1007:+ strand=+ length=982 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ600295|11320.1516414
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ600295|11320.1516414: segment=fluA-seg5 genes=NP region=41..1537:+ strand=+ length=1497 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ600298|11320.1516412
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ600298|11320.1516412: segment=fluA-seg8 genes=NEP,NS1 region=17..854:+ strand=+ length=838 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ600297|11320.1516413
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ600297|11320.1516413: segment=fluA-seg7 genes=M2,M1 region=20..1001:+ strand=+ length=982 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ600284|11320.1516426
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ600284|11320.1516426: segment=fluA-seg2 genes=PB1,PB1-F2 region=21..2297:+ strand=+ length=2277 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ600277|11320.1516433
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ600277|11320.1516433: segment=fluA-seg3 genes=PA,PA-X region=19..2169:+ strand=+ length=2151 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ600275|11320.1516435
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ600275|11320.1516435: segment=fluA-seg1 genes=PB2 region=18..2297:+ strand=+ length=2280 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PZ600288|11320.1516423
+2026-09-09 13:55:57 [INFO] __main__: Extracted PZ600288|11320.1516423: segment=fluA-seg6 genes=NA region=15..1424:+ strand=+ length=1410 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV723630|11520.116924
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV723630|11520.116924: segment=fluB-seg8 genes=NEP,NS1 region=28..1054:+ strand=+ length=1027 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV723629|11520.116926
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV723629|11520.116926: segment=fluB-seg7 genes=M1,BM2 region=8..1083:+ strand=+ length=1076 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV723627|11520.116928
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV723627|11520.116928: segment=fluB-seg5 genes=NP region=47..1729:+ strand=+ length=1683 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV723625|11520.116929
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV723625|11520.116929: segment=fluB-seg3 genes=PA region=16..2196:+ strand=+ length=2181 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV723626|11520.116930
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV723626|11520.116930: segment=fluB-seg4 genes=HA region=20..1768:+ strand=+ length=1749 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV723634|11520.116922
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV723634|11520.116922: segment=fluB-seg4 genes=HA region=20..1768:+ strand=+ length=1749 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV895150|11520.122454
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV895150|11520.122454: segment=fluB-seg6 genes=NB,NA region=34..1441:+ strand=+ length=1408 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV895158|11520.122445
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV895158|11520.122445: segment=fluB-seg6 genes=NB,NA region=33..1440:+ strand=+ length=1408 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV895157|11520.122446
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV895157|11520.122446: segment=fluB-seg5 genes=NP region=47..1729:+ strand=+ length=1683 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV895156|11520.122447
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV895156|11520.122447: segment=fluB-seg4 genes=HA region=20..1768:+ strand=+ length=1749 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV895175|11520.122428
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV895175|11520.122428: segment=fluB-seg7 genes=M1,BM2 region=8..1083:+ strand=+ length=1076 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Processing sequence: PV556121|11520.109640
+2026-09-09 13:55:57 [INFO] __main__: Extracted PV556121|11520.109640: segment=fluB-seg6 genes=NB,NA region=33..1440:+ strand=+ length=1408 ambiguous=0
+2026-09-09 13:55:57 [INFO] __main__: Final summary: total=63 extracted=63 excluded=0 sequences.

@@ -1,0 +1,17 @@
+# esl-seqstat -a output for input fasta file saved in:                             sequences_influenza_ab_test.vadr_annotate.vadr.seqstat
+# 5 column feature table output for passing sequences saved in:                    sequences_influenza_ab_test.vadr_annotate.vadr.pass.tbl
+# 5 column feature table output for failing sequences saved in:                    sequences_influenza_ab_test.vadr_annotate.vadr.fail.tbl
+# list of passing sequences saved in:                                              sequences_influenza_ab_test.vadr_annotate.vadr.pass.list
+# list of failing sequences saved in:                                              sequences_influenza_ab_test.vadr_annotate.vadr.fail.list
+# list of alerts in the feature tables saved in:                                   sequences_influenza_ab_test.vadr_annotate.vadr.alt.list
+# fasta file with passing sequences saved in:                                      sequences_influenza_ab_test.vadr_annotate.vadr.pass.fa
+# fasta file with failing sequences saved in:                                      sequences_influenza_ab_test.vadr_annotate.vadr.fail.fa
+# per-sequence tabular annotation summary file saved in:                           sequences_influenza_ab_test.vadr_annotate.vadr.sqa
+# per-sequence tabular classification summary file saved in:                       sequences_influenza_ab_test.vadr_annotate.vadr.sqc
+# per-feature tabular summary file saved in:                                       sequences_influenza_ab_test.vadr_annotate.vadr.ftr
+# per-model-segment tabular summary file saved in:                                 sequences_influenza_ab_test.vadr_annotate.vadr.sgm
+# per-alert tabular summary file saved in:                                         sequences_influenza_ab_test.vadr_annotate.vadr.alt
+# alert count tabular summary file saved in:                                       sequences_influenza_ab_test.vadr_annotate.vadr.alc
+# per-model tabular summary file saved in:                                         sequences_influenza_ab_test.vadr_annotate.vadr.mdl
+# alignment doctoring tabular summary file saved in:                               sequences_influenza_ab_test.vadr_annotate.vadr.dcr
+# replaced stretches of Ns summary file (-r) saved in:                             sequences_influenza_ab_test.vadr_annotate.vadr.rpn

@@ -31,7 +31,6 @@ workflow PIPELINE_INITIALISATION {
     monochrome_logs   // boolean: Do not use coloured log outputs
     nextflow_cli_args //   array: List of positional nextflow CLI args
     outdir            //  string: The output directory where the results will be saved
-    input             //  string: Path to input samplesheet
     help              // boolean: Display help message and exit
     help_full         // boolean: Show the full help message
     show_hidden       // boolean: Show hidden parameters in the help message
@@ -60,7 +59,7 @@ workflow PIPELINE_INITIALISATION {
         before_text = before_text.replaceAll(/\033\[[0-9;]*m/, '')
     }
 
-    command = "nextflow run ${workflow.manifest.name} -profile <docker/singularity/.../institute> --input samplesheet.csv --outdir <OUTDIR>"
+    command = "nextflow run ${workflow.manifest.name} -profile <docker/singularity/.../institute> --fasta yours.fasta --metadata_csv yours_BVBRC_metadata.csv --db_version yyyymmdd --outdir <OUTDIR>"
 
     UTILS_NFSCHEMA_PLUGIN (
         workflow,
@@ -82,32 +81,9 @@ workflow PIPELINE_INITIALISATION {
         nextflow_cli_args
     )
 
-    //
-    // Create channel from input file provided through params.input
-    //
-
-    channel
-        .fromList(samplesheetToList(input, "${projectDir}/assets/schema_input.json"))
-        .map {
-            meta, fastq_1, fastq_2 ->
-                if (!fastq_2) {
-                    return [ meta.id, meta + [ single_end:true ], [ fastq_1 ] ]
-                } else {
-                    return [ meta.id, meta + [ single_end:false ], [ fastq_1, fastq_2 ] ]
-                }
-        }
-        .groupTuple()
-        .map { samplesheet ->
-            validateInputSamplesheet(samplesheet)
-        }
-        .map {
-            meta, fastqs ->
-                return [ meta, fastqs.flatten() ]
-        }
-        .set { ch_samplesheet }
 
     emit:
-    samplesheet = ch_samplesheet
+
     versions    = ch_versions
 }
 
@@ -152,25 +128,4 @@ workflow PIPELINE_COMPLETION {
     workflow.onError {
         log.error "Pipeline failed. Please refer to troubleshooting docs for common issues: https://nf-co.re/docs/running/troubleshooting"
     }
-}
-
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    FUNCTIONS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-
-//
-// Validate channels from input samplesheet
-//
-def validateInputSamplesheet(input) {
-    def (metas, fastqs) = input[1..2]
-
-    // Check that multiple runs of the same sample are of the same datatype i.e. single-end / paired-end
-    def endedness_ok = metas.collect{ meta -> meta.single_end }.unique().size == 1
-    if (!endedness_ok) {
-        error("Please check input samplesheet -> Multiple runs of a sample must be of the same datatype i.e. single-end or paired-end: ${metas[0].id}")
-    }
-
-    return [ metas[0], fastqs ]
 }
