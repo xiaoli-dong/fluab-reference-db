@@ -28,6 +28,7 @@ The workflow consists of two main stages: retrieving reference data and processi
 The launcher script prepares the Python environment, retrieves data from BV-BRC, and starts the Nextflow workflow.
 
 ```mermaid
+%%{init: {"flowchart": {"wrappingWidth": 350}}}%%
 flowchart TD
     A["bin/run_pipeline.sh"] --> B["Initialize Python virtual environment"]
     B --> C{"Skip BV-BRC download?"}
@@ -48,6 +49,7 @@ flowchart TD
 The Nextflow workflow processes the downloaded metadata and sequence data to generate the reference databases.
 
 ```mermaid
+%%{init: {"flowchart": {"wrappingWidth": 350}}}%%
 flowchart TD
     A["BV-BRC metadata and sequence JSON"] --> B["BVBRC_GETFASTA"]
     B --> C["FASTA sequences"]
