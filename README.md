@@ -144,10 +144,7 @@ bash bin/run_pipeline.sh --outdir test_results --max 500
 To change the download batch size and sequence limit:
 
 ```bash
-bash bin/run_pipeline.sh \
-    --outdir results \
-    --batch 100 \
-    --seq-limit 100
+bash bin/run_pipeline.sh --outdir results --batch 100 --seq-limit 100
 ```
 
 ### Override the database version
