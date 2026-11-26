@@ -82,19 +82,11 @@ flowchart TD
 ```
 
 ## Requirements
+- Nextflow 25.10.4 or later, python3
+- The pipeline includes configuration profiles for the supported execution environments. Select the profile appropriate for your system. The supported execution environments are listed below:
+- Docker, Singularity, Apptainer, Conda or Mamba, Podman, Shifter, or Charliecloud. In our organization, we are using singularity
 
-The following software and environment are required:
 
-- Linux
-- Python 3
-- Conda
-- Nextflow
-- Singularity or Apptainer
-- A Conda environment named `nf-core-4`, with Nextflow and the required nf-core tools available
-
-The launcher automatically creates a Python virtual environment (`.venv`) and installs dependencies from `requirements.txt`. If the requirements file is not present, it installs the `bvbrc` Python package directly.
-
-The launcher uses the `singularity` Nextflow profile and enables `-resume` by default.
 
 ## Installation
 
