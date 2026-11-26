@@ -82,11 +82,10 @@ flowchart TD
 ```
 
 ## Requirements
-- Nextflow 25.10.4 or later, python3
-- The pipeline includes configuration profiles for the supported execution environments. Select the profile appropriate for your system. The supported execution environments are listed below:
+- Nextflow >=25.10.4, python3
+- The pipeline includes configuration profiles for the supported execution environments. Select the profile appropriate for your system
     - Docker, Singularity, Apptainer, Conda or Mamba, Podman, Shifter, or Charliecloud. In our organization, we are using singularity
-
-
+    - we have been using singularity in our organization
 
 ## Installation
 
@@ -96,8 +95,6 @@ Clone the repository:
 git clone https://github.com/xiaoli-dong/fluab-reference-db.git
 cd fluab-reference-db
 ```
-
-Ensure that the required software is available and that the `nf-core-4` Conda environment is configured before running the pipeline.
 
 ## Usage
 
