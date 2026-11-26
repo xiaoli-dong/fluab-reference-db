@@ -4,7 +4,7 @@ Automated reference database generation for the ProvLab influenza A and B bioinf
 
 `fluab-reference-db` retrieves influenza reference metadata and nucleotide sequences from [BV-BRC](https://www.bv-brc.org/), processes the downloaded data through a Nextflow workflow, and generates reference databases for downstream influenza sequence analysis.
 
-The workflow is launched using `bin/run_pipeline.sh`, which automates Python environment setup, BV-BRC data retrieval, and Nextflow execution.
+The workflow is launched using `bin/run_pipeline.sh`, which automates Python environment setup, BV-BRC sequence and meta data retrieval, and Nextflow execution.
 
 ## Features
 
